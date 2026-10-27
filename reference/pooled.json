@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "files": {
+    "train": {
+      "pooled": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/train-pooled.npy",
+        "sha256": "ad32cbce2aba233e40fb29d52e71dbf2e31577e4405092620594814ac8a6ed32"
+      },
+      "original_probability": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/train-original-baseline-probability.npy",
+        "sha256": "eaaea456116927ed0eb1217205473281b32090e4eed702bdff4e62a1fbdd8191"
+      }
+    },
+    "val": {
+      "pooled": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/val-pooled.npy",
+        "sha256": "309d2509bcba285503fba53f7366081a217a4df8b204d6a8c2c7fb840066fbb3"
+      },
+      "original_probability": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/val-original-baseline-probability.npy",
+        "sha256": "881b962426defc4c05ac03739b0a8087c93c8fbc831adb810cf8370669f0c2f2"
+      }
+    },
+    "test": {
+      "pooled": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/test-pooled.npy",
+        "sha256": "b051694864d26a53e8ccf221679a04f3add7d491b21fe8c70aacf8e838c22653"
+      },
+      "original_probability": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/test-original-baseline-probability.npy",
+        "sha256": "50f8a9dcd7ee9bef44458383e1005ee610d75bfcdb1cc211a57705b3bc6493df"
+      }
+    }
+  },
+  "checks": {
+    "val_reference_prediction_max_abs_diff": 2.9797363243488917e-08
+  },
+  "pooled_dim": 2048,
+  "source_checkpoint": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/baseline/attempt_001/baseline_seed42/best_model.pth",
+    "sha256": "9e46759795a80b3c8e6d364e964101f84529c0adaad3a6184d11c07201b47846"
+  },
+  "frozen": true,
+  "mechanism_scores_entered_encoder": false,
+  "additional_scaling": "none"
+}

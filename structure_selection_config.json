@@ -1,0 +1,10 @@
+{
+  "fdr_alpha": 0.05,
+  "min_validation_support": 3,
+  "min_training_units": 5,
+  "min_training_per_class": 1,
+  "min_training_connectivity_groups": 3,
+  "min_core_error_connectivity_groups": 3,
+  "description": "Restore recorded primary first-representative identity policy, full-family BH/BY and exact S1-S5 scenarios. Prior review roles are supplied as archived data. Merged-connectivity significance is reported only.",
+  "protocol": "legacy_review_v1"
+}

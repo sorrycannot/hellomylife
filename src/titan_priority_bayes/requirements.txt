@@ -1,0 +1,9 @@
+# Use the existing titan_bbb environment. Do not upgrade an already working environment.
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+rdkit
+joblib
+openpyxl

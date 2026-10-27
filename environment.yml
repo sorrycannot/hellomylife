@@ -1,0 +1,11 @@
+# Linux x86_64. Create Python/system runtime first; install pip wheels afterward.
+name: titan_bbb
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.18
+  - pip=25.2
+  - libgcc-ng
+  - libstdcxx-ng
+  - libgomp

@@ -1,0 +1,72 @@
+{
+  "run_signature": "c69a3e1261c2be84036bfc5d3c72a01432e128a8fac52c37b020469797c4887c",
+  "mode": "efflux_pampa",
+  "selected_trial": "trial_0052",
+  "indices": [
+    1,
+    0
+  ],
+  "core_weight": 1.05,
+  "reserve_weight": 1.0,
+  "core_rules": [
+    "V01",
+    "V03"
+  ],
+  "reserve_rules": [
+    "V02",
+    "V04",
+    "V05",
+    "V06",
+    "V08",
+    "V12"
+  ],
+  "selection": "Pareto + all three validation objectives >= own unweighted reference within 1e-12; maximize S=.50*AUROC+.25*BACC+.25*(MCC+1)/2; exact ties weaker max/sum/core/reserve weights",
+  "validation_metrics": {
+    "fixed_0p5": {
+      "n": 727,
+      "n_positive": 434,
+      "n_negative": 293,
+      "threshold": 0.5,
+      "AUROC": 0.927533382614303,
+      "AUPRC_AP": 0.9479102997244473,
+      "ACC": 0.8349381017881705,
+      "BACC": 0.8395747157169595,
+      "SN": 0.815668202764977,
+      "SP": 0.863481228668942,
+      "F1": 0.855072463768116,
+      "MCC": 0.6686114177988409,
+      "TN": 253,
+      "FP": 40,
+      "FN": 80,
+      "TP": 354
+    },
+    "validation_selected": {
+      "n": 727,
+      "n_positive": 434,
+      "n_negative": 293,
+      "threshold": 0.5,
+      "AUROC": 0.927533382614303,
+      "AUPRC_AP": 0.9479102997244473,
+      "ACC": 0.8349381017881705,
+      "BACC": 0.8395747157169595,
+      "SN": 0.815668202764977,
+      "SP": 0.863481228668942,
+      "F1": 0.855072463768116,
+      "MCC": 0.6686114177988409,
+      "TN": 253,
+      "FP": 40,
+      "FN": 80,
+      "TP": 354
+    }
+  },
+  "thresholds": {
+    "fixed_0p5": 0.5,
+    "validation_selected": 0.5
+  },
+  "S": 0.8822367974612465,
+  "admissible": true,
+  "pareto": true,
+  "model_sha256": "723fe71f9c6852c140f1ea6423eb5c8b68725dc371148115e9d0a2e3c2139875",
+  "completed_unique_configurations": 200,
+  "supplementary_controls_excluded_from_search_selection": true
+}

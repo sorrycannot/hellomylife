@@ -1,0 +1,962 @@
+{
+  "UTC": "2026-10-24T13:55:31.438721+00:00",
+  "project_root": "/root/project/titanBBB/TITAN-BBB-main",
+  "python": "3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:45:41) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-36-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "lightgbm": "4.7.0",
+    "rdkit": "2025.3.6",
+    "joblib": "1.6.0",
+    "openpyxl": "3.1.5",
+    "optuna": "4.5.0",
+    "torch": "2.7.1+cu118",
+    "torchvision": "0.22.1+cu118",
+    "transformers": "4.56.2",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "0.36.2",
+    "Pillow": "12.3.0",
+    "click": "8.3.0",
+    "tqdm": "4.67.1",
+    "safetensors": "0.8.0"
+  },
+  "all_installed_distributions": [
+    {
+      "name": "alembic",
+      "version": "1.20.1"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.3.0"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorlog",
+      "version": "6.12.0"
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0"
+    },
+    {
+      "name": "filelock",
+      "version": "4.1.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "0.36.2"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0"
+    },
+    {
+      "name": "lightgbm",
+      "version": "4.7.0"
+    },
+    {
+      "name": "Mako",
+      "version": "1.4.3"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.4"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.27.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.4.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6"
+    },
+    {
+      "name": "nvidia-cublas-cu11",
+      "version": "11.11.3.6"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu11",
+      "version": "11.8.87"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu11",
+      "version": "11.8.89"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu11",
+      "version": "11.8.89"
+    },
+    {
+      "name": "nvidia-cudnn-cu11",
+      "version": "9.1.0.70"
+    },
+    {
+      "name": "nvidia-cufft-cu11",
+      "version": "10.9.0.58"
+    },
+    {
+      "name": "nvidia-curand-cu11",
+      "version": "10.3.0.86"
+    },
+    {
+      "name": "nvidia-cusolver-cu11",
+      "version": "11.4.1.48"
+    },
+    {
+      "name": "nvidia-cusparse-cu11",
+      "version": "11.7.5.86"
+    },
+    {
+      "name": "nvidia-nccl-cu11",
+      "version": "2.21.5"
+    },
+    {
+      "name": "nvidia-nvtx-cu11",
+      "version": "11.8.86"
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5"
+    },
+    {
+      "name": "optuna",
+      "version": "4.5.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.2"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "25.2"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.5"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "rdkit",
+      "version": "2025.3.6"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.7.2"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.0.55"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2"
+    },
+    {
+      "name": "tomli",
+      "version": "2.5.0"
+    },
+    {
+      "name": "torch",
+      "version": "2.7.1+cu118"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.7.1+cu118"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.22.1+cu118"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1"
+    },
+    {
+      "name": "transformers",
+      "version": "4.56.2"
+    },
+    {
+      "name": "triton",
+      "version": "3.3.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "wheel",
+      "version": "0.48.0"
+    }
+  ],
+  "conda_builds": [
+    {
+      "name": "_openmp_mutex",
+      "version": "4.5",
+      "build_string": "20_gnu",
+      "build_number": 20
+    },
+    {
+      "name": "alembic",
+      "version": "1.20.1",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "build_string": "hda65f42_10",
+      "build_number": 10
+    },
+    {
+      "name": "ca-certificates",
+      "version": "2026.7.22",
+      "build_string": "hbd8a1cb_0",
+      "build_number": 0
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "click",
+      "version": "8.3.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "colorlog",
+      "version": "6.12.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-cudart",
+      "version": "11.8.89",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-cupti",
+      "version": "11.8.87",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-libraries",
+      "version": "11.8.0",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-nvrtc",
+      "version": "11.8.89",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-nvtx",
+      "version": "11.8.86",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-runtime",
+      "version": "11.8.0",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "cuda-version",
+      "version": "13.1",
+      "build_string": "h2ff5cdb_4",
+      "build_number": 4
+    },
+    {
+      "name": "et-xmlfile",
+      "version": "2.0.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "filelock",
+      "version": "4.1.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "ld_impl_linux-64",
+      "version": "2.46.1",
+      "build_string": "default_hbd61a6d_103",
+      "build_number": 103
+    },
+    {
+      "name": "libcublas",
+      "version": "11.11.3.6",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libcufft",
+      "version": "10.9.0.58",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libcufile",
+      "version": "1.16.0.49",
+      "build_string": "h3b4bcfc_0",
+      "build_number": 0
+    },
+    {
+      "name": "libcurand",
+      "version": "10.4.1.34",
+      "build_string": "h5dabb87_0",
+      "build_number": 0
+    },
+    {
+      "name": "libcusolver",
+      "version": "11.4.1.48",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libcusparse",
+      "version": "11.7.5.86",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libexpat",
+      "version": "2.8.5",
+      "build_string": "hd2095e1_0",
+      "build_number": 0
+    },
+    {
+      "name": "libffi",
+      "version": "3.7.0",
+      "build_string": "h81df57d_1",
+      "build_number": 1
+    },
+    {
+      "name": "libgcc",
+      "version": "16.2.0",
+      "build_string": "ha9f2e26_7",
+      "build_number": 7
+    },
+    {
+      "name": "libgcc-ng",
+      "version": "16.2.0",
+      "build_string": "h69a702a_7",
+      "build_number": 7
+    },
+    {
+      "name": "libgomp",
+      "version": "16.2.0",
+      "build_string": "he0feb66_7",
+      "build_number": 7
+    },
+    {
+      "name": "liblzma",
+      "version": "5.8.3",
+      "build_string": "hb03c661_1",
+      "build_number": 1
+    },
+    {
+      "name": "libnpp",
+      "version": "11.8.0.86",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libnsl",
+      "version": "2.0.1",
+      "build_string": "hb9d3cd8_1",
+      "build_number": 1
+    },
+    {
+      "name": "libnvjpeg",
+      "version": "11.9.0.86",
+      "build_string": "0",
+      "build_number": 0
+    },
+    {
+      "name": "libsqlite",
+      "version": "3.54.0",
+      "build_string": "h0737f62_101",
+      "build_number": 101
+    },
+    {
+      "name": "libstdcxx-ng",
+      "version": "11.2.0",
+      "build_string": "he4da1e4_16",
+      "build_number": 16
+    },
+    {
+      "name": "libuuid",
+      "version": "2.42.4",
+      "build_string": "hcfc3c73_0",
+      "build_number": 0
+    },
+    {
+      "name": "libxcrypt",
+      "version": "4.4.38",
+      "build_string": "h280c20c_0",
+      "build_number": 0
+    },
+    {
+      "name": "libzlib",
+      "version": "1.3.2",
+      "build_string": "h25fd6f3_3",
+      "build_number": 3
+    },
+    {
+      "name": "lightgbm",
+      "version": "4.7.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "narwhals",
+      "version": "2.27.1",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "ncurses",
+      "version": "6.6",
+      "build_string": "hdb14827_1",
+      "build_number": 1
+    },
+    {
+      "name": "networkx",
+      "version": "3.4.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cublas-cu11",
+      "version": "11.11.3.6",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu11",
+      "version": "11.8.87",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu11",
+      "version": "11.8.89",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu11",
+      "version": "11.8.89",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cudnn-cu11",
+      "version": "9.1.0.70",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cufft-cu11",
+      "version": "10.9.0.58",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-curand-cu11",
+      "version": "10.3.0.86",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cusolver-cu11",
+      "version": "11.4.1.48",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-cusparse-cu11",
+      "version": "11.7.5.86",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-nccl-cu11",
+      "version": "2.21.5",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "nvidia-nvtx-cu11",
+      "version": "11.8.86",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "openssl",
+      "version": "3.6.5",
+      "build_string": "h781a0a9_0",
+      "build_number": 0
+    },
+    {
+      "name": "optuna",
+      "version": "4.5.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "build_string": "pyhc364b38_0",
+      "build_number": 0
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "pip",
+      "version": "25.2",
+      "build_string": "pyh8b19718_0",
+      "build_number": 0
+    },
+    {
+      "name": "python",
+      "version": "3.10.18",
+      "build_string": "hd6af730_0_cpython",
+      "build_number": 0
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "pytorch-cuda",
+      "version": "11.8",
+      "build_string": "h7e8668a_6",
+      "build_number": 6
+    },
+    {
+      "name": "pytz",
+      "version": "2026.5",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "rdkit",
+      "version": "2025.3.6",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "readline",
+      "version": "8.3",
+      "build_string": "hd6e31c0_1",
+      "build_number": 1
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.7.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "build_string": "pyh332efcf_0",
+      "build_number": 0
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.0.55",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "tk",
+      "version": "8.6.13",
+      "build_string": "noxft_h1df4ec4_4",
+      "build_number": 104
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "tomli",
+      "version": "2.5.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "torch",
+      "version": "2.7.1+cu118",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.7.1+cu118",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "torchvision",
+      "version": "0.22.1+cu118",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "transformers",
+      "version": "4.56.2",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "triton",
+      "version": "3.3.1",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "build_string": "pypi_0",
+      "build_number": 0
+    },
+    {
+      "name": "wheel",
+      "version": "0.48.0",
+      "build_string": "pyhd8ed1ab_0",
+      "build_number": 0
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.7",
+      "build_string": "hb78ec9c_7",
+      "build_number": 7
+    }
+  ],
+  "thread_and_determinism_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "PYTHONHASHSEED": null,
+    "CUBLAS_WORKSPACE_CONFIG": null
+  },
+  "known_paths": {
+    "src/generate_tabular_features.py": true,
+    "src/generate_image_features.py": true,
+    "src/generate_text_features.py": true,
+    "src/train.py": true,
+    "src/utils/model.py": true,
+    "src/utils/trainer.py": true,
+    "src/utils/dataset.py": true,
+    "src/utils/utils.py": true,
+    "src/utils/evaluate.py": true,
+    "src/generate_mechanism_features.py": true,
+    "src/mechanism_common.py": true,
+    "src/train_titan_mechanism.py": true,
+    "environment.yml": true,
+    "dataset/train_classification.csv": true,
+    "dataset/val_classification.csv": true,
+    "dataset/test_classification.csv": true
+  },
+  "limits": {
+    "max_file_mb": 16,
+    "max_total_mb": 250
+  },
+  "selected_bytes": 44305133,
+  "files_included": 5759,
+  "files_inventoried": 12457,
+  "warnings": [],
+  "commands": [
+    {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version",
+        "--format=csv,noheader"
+      ],
+      "exit_code": 0,
+      "stdout": "NVIDIA H20, 580.173.02\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nvcc",
+        "--version"
+      ],
+      "error": "[Errno 2] No such file or directory: 'nvcc'"
+    }
+  ],
+  "purpose": "Source recovery and provenance audit. NOT an executable end-to-end reproduction or a successful numerical match.",
+  "large_models_and_features": "Not embedded by default; retain originals on the server. Inventory supplies paths/sizes; --hash-large supplies hashes."
+}

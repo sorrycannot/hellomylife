@@ -1,0 +1,366 @@
+{
+  "status": "complete",
+  "signature": "95bb6824c1de0e9fa9a9508785bf936f1bfcd3d7d972532147c6cfeb92540e66",
+  "definition": {
+    "seed": 42,
+    "groups": [
+      "baseline",
+      "zero_control",
+      "efflux_only",
+      "influx_only",
+      "pampa_only",
+      "efflux_influx",
+      "efflux_pampa",
+      "influx_pampa",
+      "full_fusion",
+      "late_concat"
+    ],
+    "plan": {
+      "baseline": null,
+      "zero_control": [
+        0,
+        0,
+        0
+      ],
+      "efflux_only": [
+        1,
+        0,
+        0
+      ],
+      "influx_only": [
+        0,
+        1,
+        0
+      ],
+      "pampa_only": [
+        0,
+        0,
+        1
+      ],
+      "efflux_influx": [
+        1,
+        1,
+        0
+      ],
+      "efflux_pampa": [
+        1,
+        0,
+        1
+      ],
+      "influx_pampa": [
+        0,
+        1,
+        1
+      ],
+      "full_fusion": [
+        1,
+        1,
+        1
+      ],
+      "late_concat": [
+        1,
+        1,
+        1
+      ]
+    },
+    "epochs": 1000,
+    "device": "cuda",
+    "data": {
+      "mechanism_manifest": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/manifest.json",
+        "sha256": "166bc4af45b62a97a2b5fbfb57c982b91394c78e7ec7e271cbd11a3e8edf25c8"
+      },
+      "inputs": {
+        "train": {
+          "dataset": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/train_classification.csv",
+            "sha256": "73f0009b521160a2e117032b82359f728fef3b60a6e0f5b466e18a10cf5193de"
+          },
+          "mechanism": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-classification.npy",
+            "sha256": "59853f34e2d382f86f4ff5c25ff9b149157e14d1cd367f1d04d9db294b89fcba"
+          },
+          "row_audit": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-audit.csv",
+            "sha256": "23b5a94cb8478a305459eb18d08b3cc4a9bb5ee7ad742b570803c197e4060190"
+          },
+          "n": 7593,
+          "tabular": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/train-tabular-classification.npy",
+            "sha256": "aa04600c2fa5c542be40a18958494299a61d22c8d86339bb44d100a883a4c211",
+            "shape": [
+              7593,
+              384
+            ]
+          },
+          "image": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/train-image-classification.npy",
+            "sha256": "5a780df7407b5a2a0a02ca195a14b552fdb8237b48af1f9be53303061e667333",
+            "shape": [
+              7593,
+              2048
+            ]
+          },
+          "text": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/train-text-classification.npy",
+            "sha256": "99a2b14b0b81969f7d788c0294743881596cfe68bccbe036d40ed475ca09f5b9",
+            "shape": [
+              7593,
+              768
+            ]
+          }
+        },
+        "val": {
+          "dataset": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/val_classification.csv",
+            "sha256": "b6c037545ef7c23c2a5ab0d851857627754151695871a9a74d2ecb8a3d1810c9"
+          },
+          "mechanism": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-classification.npy",
+            "sha256": "5aa52cecfd16ee42fd2b819e9173fac9c0bbd1518cd52feaef3dc238fc52e9e7"
+          },
+          "row_audit": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-audit.csv",
+            "sha256": "0c033921105d3409a4691d54c8e109db433f49cca9055854dafad561cb69d034"
+          },
+          "n": 727,
+          "tabular": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/val-tabular-classification.npy",
+            "sha256": "dac4f78badbcf6d9cbce0f386fb71b2aec7cdf1deca286bca2aca74257363f3a",
+            "shape": [
+              727,
+              384
+            ]
+          },
+          "image": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/val-image-classification.npy",
+            "sha256": "ab7d1fe3cc6545ab836b45bab2770e9b48c1ea59eb1b7fb722d0fcf99f3e41c0",
+            "shape": [
+              727,
+              2048
+            ]
+          },
+          "text": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/val-text-classification.npy",
+            "sha256": "5f9096cf7a0477680328f19fa8c707bd557e60b4cacd16df10f5435714eaa3ae",
+            "shape": [
+              727,
+              768
+            ]
+          }
+        },
+        "test": {
+          "dataset": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/test_classification.csv",
+            "sha256": "e3c17c65ce3b6c12c4c61fd1c700123a30d440ae2c5f92fae57779fa368aca94"
+          },
+          "mechanism": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-classification.npy",
+            "sha256": "ddcab705e4b46b7d6966bccb4af77ec489af1e30daf22b9bdc1c4765511900c9"
+          },
+          "row_audit": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-audit.csv",
+            "sha256": "3689ebd0fe96035082387e67f24559c042379e73dfbc41ca30f81d501f54b61b"
+          },
+          "n": 942,
+          "tabular": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/test-tabular-classification.npy",
+            "sha256": "c6671d6334a81050ecdb0a192e94fdb73d34ac0832941d67d926cf7de26605c5",
+            "shape": [
+              942,
+              384
+            ]
+          },
+          "image": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/test-image-classification.npy",
+            "sha256": "30d395a9e605a82d5e0d570af2831deccad24c3ef4be6b680cc144364c540e6c",
+            "shape": [
+              942,
+              2048
+            ]
+          },
+          "text": {
+            "path": "/root/project/titanBBB/TITAN-BBB-main/features/test-text-classification.npy",
+            "sha256": "afbe9722f2af60d1261dc1458b06acca49beb233da778bab8ca0b6c39c05351f",
+            "shape": [
+              942,
+              768
+            ]
+          }
+        }
+      },
+      "mechanism_scaling": "none; raw fixed auxiliary scores in [0,1]",
+      "existing_TITAN_split_identity_overlaps": {
+        "train__val": 1,
+        "train__test": 2,
+        "val__test": 0
+      },
+      "dataset": "original TITAN classification",
+      "label_mapping": "unchanged TITAN labels",
+      "counts": {
+        "train": 7593,
+        "val": 727,
+        "test": 942
+      },
+      "partition_policy": "original train/val/test; no resplit"
+    },
+    "sources": [
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/titan_attention_seed2022/__init__.py",
+        "sha256": "de2a37a77d375c98b1a5afa5419c587de35d49b6f0c86fc1d78daa33bb55eb78"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/titan_attention_seed2022/common.py",
+        "sha256": "2fc6cbc1c827513df3acc15ced64f360d239499b6fe9eba73f4635c3f5c89bf7"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/titan_attention_seed2022/model.py",
+        "sha256": "77c5b63f1b7475b0ceeed3e060c7c1b3c120e34139e24c5ec96fb02fef8cfe00"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/titan_attention_seed2022/run_titan_attention.py",
+        "sha256": "9a3d0821d31c4f5e20f8d78bf9758a41ab60e7a52187a637e707440bfcd83750"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/titan_attention_seed2022/trainer.py",
+        "sha256": "61eb21ad76355a83c8313b9d45bc9b113e13ac442b57f1383771b1fe72452e62"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/utils/model.py",
+        "sha256": "53500e6645236e7fda58c736274e039173ff30154bcbf2d9110bf91b8bd8499b"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/src/utils/utils.py",
+        "sha256": "e1f2df9da47aa555268082716bfbae69c945a4306438200d02ee55023d0f7c66"
+      }
+    ],
+    "versions": {
+      "torch": "2.7.1+cu118",
+      "numpy": "2.2.6",
+      "pandas": "2.3.2",
+      "sklearn": "1.7.2",
+      "joblib": "1.6.0",
+      "python": "3.10.18"
+    },
+    "threshold_policy": "validation BACC grid 0.1/0.3/0.5/0.7/0.9; first tie",
+    "mechanism_scaling": "none; unchanged from the late-concat control"
+  },
+  "fitted": {
+    "baseline": {
+      "folder": "experiments/baseline/attempt_001/baseline_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/baseline/attempt_001/baseline_seed42/model_config.json",
+        "sha256": "79f40c3c96396f62ed5eeca4ba4692ba636ab23efd801355d981f1c7da10071e"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/baseline/attempt_001/baseline_seed42/selection_lock.json",
+        "sha256": "f28f4c80d6a5e07c7880d1f6b656dfbc6c32b14452aa3a5c5b6dd3e0df68daf8"
+      }
+    },
+    "zero_control": {
+      "folder": "experiments/zero_control/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/zero_control/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "5760c3bb3ab5758e33fe29a2f10c981bca1e85a5a48e5ddf08c7d9ac8f81e88b"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/zero_control/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "c37449595b0cc3ab54b796649829619a1b45a7c584db22094427f6cb2e128913"
+      }
+    },
+    "efflux_only": {
+      "folder": "experiments/efflux_only/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_only/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "48b31236b538f181b3f0aba65cd7de8c4ec44960f34843ae4836fc3fb3fe92b8"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_only/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "49c7904e3d7585bea73fc2ba852b392a3ed883bcc17e2bdd9f9d134a6df9df35"
+      }
+    },
+    "influx_only": {
+      "folder": "experiments/influx_only/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/influx_only/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "e38cbb0422ee1bd5418a2674c5894f0b8eb68ef1ad62885eede5ee38487bfe84"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/influx_only/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "f01774e1ac2650bd5b22ec3c9be59b0905a5325d69b07595b592f84a62c5a625"
+      }
+    },
+    "pampa_only": {
+      "folder": "experiments/pampa_only/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/pampa_only/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "b9fb9e2119c9c08d50cb298a9dfdc3cba09f8f64f69ce1663514bc63010de12b"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/pampa_only/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "0319d10e933ef2e6bd6dd4302a3b9a4933c41ed093ed33fe129d46cf3417e84a"
+      }
+    },
+    "efflux_influx": {
+      "folder": "experiments/efflux_influx/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_influx/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "127da74d14e80eea442ada8a6c2727585b2d78012587e457668d20317f6073ec"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_influx/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "262cbfb59677f500084de1accd119a2c094e633de7f1aafff8819ecab6b9cc34"
+      }
+    },
+    "efflux_pampa": {
+      "folder": "experiments/efflux_pampa/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_pampa/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "b8b1df42df1b708b725240946172ff3da42b860a12618e477a6443de6d83795f"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/efflux_pampa/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "b2b04ae1eb05d64118bda44bec29cc800771dbdcac77216592ce74d4339cbf42"
+      }
+    },
+    "influx_pampa": {
+      "folder": "experiments/influx_pampa/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/influx_pampa/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "718de7a86000091da3f3a9abc227939f880576b89465b5d419ccdbc474dfc5e1"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/influx_pampa/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "8fde1fe41e632f365744b80ee40aa6efee3661070379fa23ddee3b98dd7799e1"
+      }
+    },
+    "full_fusion": {
+      "folder": "experiments/full_fusion/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/full_fusion/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "424b38db0462958ae305f8276b8db76aabe6ea6dd6dd80d54e44f646712ec9e3"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/full_fusion/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "95df46b595fccaff239a975beaa4fd47790b973fa0494666c4b5470c1ff240fd"
+      }
+    },
+    "late_concat": {
+      "folder": "experiments/late_concat/attempt_001/mechanism_seed42",
+      "config": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/late_concat/attempt_001/mechanism_seed42/model_config.json",
+        "sha256": "566478c60025aaec9f984367d232eddc62075df34f8bfa7fe78351fe54f55d74"
+      },
+      "lock": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/late_concat/attempt_001/mechanism_seed42/selection_lock.json",
+        "sha256": "832730e37c9be11b2f53ca950b5571adcc7b5e50fc07ceba70297699083072bc"
+      }
+    }
+  },
+  "dataset": "TITAN classification",
+  "test_used_for_selection": false,
+  "comparison": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/comparison.csv",
+    "sha256": "428ad287b5835dd83c2f390ab1b349ce5343dd8ad20559d79c6929596e8a30f2"
+  }
+}

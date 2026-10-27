@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "score_columns": [
+    "p_efflux",
+    "p_influx",
+    "p_pampa"
+  ],
+  "task": "classification",
+  "script": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/src/generate_mechanism_features.py",
+    "sha256": "fcea7698c8d2148bb134c3f3d5787dc1979de4877088353532b2dd711398cc4e"
+  },
+  "stage1_script": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/src/train_auxiliary_titan.py",
+    "sha256": "c5b7ad209ed9c7b8f9daa6783385cb59e63e9f564c765e2cadf32bb2bc76cf05"
+  },
+  "stage1_manifest": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_stage1/run_manifest.json",
+    "sha256": "67df53c7b600766cf5bd2eef85b1f2501d8e53652dec0b0060ae842dab504dbe"
+  },
+  "identity_map": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_titan/titan_identity_map.csv",
+    "sha256": "f6bbe22e305bca020fb8c6b152b80de92a9ec1e9869de6086c3efd5cbeefa83f"
+  },
+  "auxiliary_models": {
+    "efflux": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_stage1/final_models/efflux.joblib",
+      "sha256": "66d962d108d29bca01b263e845782a10d03a10f79a2d1412c9eeb183f20b1660"
+    },
+    "influx": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_stage1/final_models/influx.joblib",
+      "sha256": "a2a38cd32eaf09715dbd31cb6609229ce2ed1f9fb91989979b70edc6d9c6e65c"
+    },
+    "pampa": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_stage1/final_models/pampa.joblib",
+      "sha256": "9f6a2f2ea3238855e6cbfa86e10ff26985ea7eb5c7ec289e426597825839aa1b"
+    }
+  },
+  "auxiliary_pools": {
+    "efflux": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_titan/cornelissen_efflux_titan_excluded.csv",
+      "sha256": "b6a401c63d8988984b7bb36547fcd2a74543475ef4def537cac15f7d864db18e"
+    },
+    "influx": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_titan/cornelissen_influx_titan_excluded.csv",
+      "sha256": "0af32f9fbc0e07a1f8a76625fd979040ec17e395690991602f9d7021f02c035d"
+    },
+    "pampa": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/auxiliary_titan/cornelissen_pampa_titan_excluded.csv",
+      "sha256": "868b38d827f6db8d515d0b03ec9b4451b06e2e817b90224a322c08c8bae38fac"
+    }
+  },
+  "dataset_files": {
+    "train": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/train_classification.csv",
+      "sha256": "73f0009b521160a2e117032b82359f728fef3b60a6e0f5b466e18a10cf5193de"
+    },
+    "val": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/val_classification.csv",
+      "sha256": "b6c037545ef7c23c2a5ab0d851857627754151695871a9a74d2ecb8a3d1810c9"
+    },
+    "test": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/test_classification.csv",
+      "sha256": "e3c17c65ce3b6c12c4c61fd1c700123a30d440ae2c5f92fae57779fa368aca94"
+    }
+  },
+  "row_order": "exact original TITAN CSV order, record 1..N",
+  "standardized_structures": "cached identities from TITAN exclusion, no restandardization",
+  "titan_outcome_columns_read": [],
+  "scores_are_calibrated_probabilities": false,
+  "score_transform": "LightGBM binary predict, no second sigmoid, no scaling",
+  "versions": {
+    "python": "3.10.18",
+    "rdkit": "2025.03.6",
+    "lightgbm": "4.7.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.2"
+  },
+  "splits": {
+    "train": {
+      "n": 7593,
+      "shape": [
+        7593,
+        3
+      ],
+      "scores": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-classification.npy",
+        "sha256": "59853f34e2d382f86f4ff5c25ff9b149157e14d1cd367f1d04d9db294b89fcba"
+      },
+      "audit": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-audit.csv",
+        "sha256": "23b5a94cb8478a305459eb18d08b3cc4a9bb5ee7ad742b570803c197e4060190"
+      },
+      "column_min": [
+        0.01626841436517739,
+        4.667470283330921e-05,
+        0.0008374651391353957
+      ],
+      "column_max": [
+        0.984773871748108,
+        0.9989494115462999,
+        0.9999306609362002
+      ],
+      "column_mean": [
+        0.4569667567357582,
+        0.17850867866690204,
+        0.6443683909606817
+      ]
+    },
+    "val": {
+      "n": 727,
+      "shape": [
+        727,
+        3
+      ],
+      "scores": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-classification.npy",
+        "sha256": "5aa52cecfd16ee42fd2b819e9173fac9c0bbd1518cd52feaef3dc238fc52e9e7"
+      },
+      "audit": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-audit.csv",
+        "sha256": "0c033921105d3409a4691d54c8e109db433f49cca9055854dafad561cb69d034"
+      },
+      "column_min": [
+        0.034555673032807405,
+        0.00017834994260687012,
+        0.0008902306909374026
+      ],
+      "column_max": [
+        0.9717743819728497,
+        0.9882034502125974,
+        0.9999339473456512
+      ],
+      "column_mean": [
+        0.498584806170378,
+        0.17350020542732023,
+        0.6709920628179478
+      ]
+    },
+    "test": {
+      "n": 942,
+      "shape": [
+        942,
+        3
+      ],
+      "scores": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-classification.npy",
+        "sha256": "ddcab705e4b46b7d6966bccb4af77ec489af1e30daf22b9bdc1c4765511900c9"
+      },
+      "audit": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-audit.csv",
+        "sha256": "3689ebd0fe96035082387e67f24559c042379e73dfbc41ca30f81d501f54b61b"
+      },
+      "column_min": [
+        0.04565150847582287,
+        9.339089184550883e-05,
+        0.0010000763907459921
+      ],
+      "column_max": [
+        0.9903406846461723,
+        0.99423853728408,
+        0.9999166507778595
+      ],
+      "column_mean": [
+        0.49089572249215496,
+        0.15012991894751068,
+        0.7122349487036501
+      ]
+    }
+  },
+  "existing_TITAN_split_identity_overlaps": {
+    "train__val": 1,
+    "train__test": 2,
+    "val__test": 0
+  }
+}

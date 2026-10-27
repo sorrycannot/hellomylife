@@ -1,0 +1,14 @@
+
+__pycache__/
+*.pyc
+*.pyo
+/pretrained/
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.bak
+*.zip
+*.rar
+/outputs/
+/results/

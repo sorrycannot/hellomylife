@@ -1,0 +1,4 @@
+# Install the CUDA 11.8 wheels from the official PyTorch index first.
+--index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118

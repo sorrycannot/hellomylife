@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-20",
+  "syntax_check": "passed",
+  "automated_checks": {
+    "count": 9,
+    "result": "passed",
+    "command": "python -m unittest discover -s titan_classifier_comparison/tests -v"
+  },
+  "checks_scope": [
+    "real NumPy/sklearn file validation and metrics",
+    "NumPy-backed neural forward math at widths 12 and 2048",
+    "mock-backend extraction and LightGBM API contracts",
+    "synthetic orchestration: four selection locks before test, resume, integrity checks"
+  ],
+  "real_torch_training_executed": false,
+  "real_lightgbm_training_executed": false,
+  "reason": "Torch and LightGBM are not installed in the development tool environment. Run real training in the existing titan_bbb server environment.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0",
+    "joblib": "1.5.3"
+  }
+}

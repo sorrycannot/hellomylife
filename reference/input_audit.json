@@ -1,0 +1,164 @@
+{
+  "provenance": {
+    "mode": "known_four_classifier_comparison",
+    "source_results": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results",
+    "metadata_witnesses": [
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/preparation.json",
+        "sha256": "2604147efe988fc75e613315df2088439995f9cd8970b89d0797e9848656c754"
+      },
+      {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/run_manifest.json",
+        "sha256": "203db9988559beb7cdce6d337d994115640368ac754f4c30f03b3f1e4a74d594"
+      }
+    ],
+    "scope": "source directory asserted to contain common baseline H cache; metadata and shape checks do not prove external exporter correctness"
+  },
+  "prior_exporter_hash_checks": {
+    "matched_existing_records": {
+      "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/train-pooled.npy": "ad32cbce2aba233e40fb29d52e71dbf2e31577e4405092620594814ac8a6ed32",
+      "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/val-pooled.npy": "309d2509bcba285503fba53f7366081a217a4df8b204d6a8c2c7fb840066fbb3",
+      "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/test-pooled.npy": "b051694864d26a53e8ccf221679a04f3add7d491b21fe8c70aacf8e838c22653",
+      "/root/project/titanBBB/TITAN-BBB-main/dataset/train_classification.csv": "73f0009b521160a2e117032b82359f728fef3b60a6e0f5b466e18a10cf5193de",
+      "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-audit.csv": "23b5a94cb8478a305459eb18d08b3cc4a9bb5ee7ad742b570803c197e4060190",
+      "/root/project/titanBBB/TITAN-BBB-main/dataset/val_classification.csv": "b6c037545ef7c23c2a5ab0d851857627754151695871a9a74d2ecb8a3d1810c9",
+      "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-audit.csv": "0c033921105d3409a4691d54c8e109db433f49cca9055854dafad561cb69d034",
+      "/root/project/titanBBB/TITAN-BBB-main/dataset/test_classification.csv": "e3c17c65ce3b6c12c4c61fd1c700123a30d440ae2c5f92fae57779fa368aca94",
+      "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-audit.csv": "3689ebd0fe96035082387e67f24559c042379e73dfbc41ca30f81d501f54b61b"
+    },
+    "no_matching_prior_record": [],
+    "meaning": "Only recognized matching prior records verify exporter-time bytes; newly computed hashes alone do not establish historical identity."
+  },
+  "mechanism_order": [
+    "efflux",
+    "influx",
+    "pampa"
+  ],
+  "original_mechanism_order": [
+    "efflux",
+    "influx",
+    "pampa"
+  ],
+  "datasets": {
+    "train": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/train_classification.csv",
+      "sha256": "73f0009b521160a2e117032b82359f728fef3b60a6e0f5b466e18a10cf5193de",
+      "n": 7593,
+      "SMILES_only_loaded": true
+    },
+    "val": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/val_classification.csv",
+      "sha256": "b6c037545ef7c23c2a5ab0d851857627754151695871a9a74d2ecb8a3d1810c9",
+      "n": 727,
+      "SMILES_only_loaded": true
+    },
+    "test": {
+      "path": "/root/project/titanBBB/TITAN-BBB-main/dataset/test_classification.csv",
+      "sha256": "e3c17c65ce3b6c12c4c61fd1c700123a30d440ae2c5f92fae57779fa368aca94",
+      "n": 942,
+      "SMILES_only_loaded": true
+    }
+  },
+  "selected_arrays": {
+    "train": {
+      "H": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/train-pooled.npy",
+        "shape": [
+          7593,
+          2048
+        ],
+        "sha256": "ad32cbce2aba233e40fb29d52e71dbf2e31577e4405092620594814ac8a6ed32",
+        "row_alignment": "assumed unchanged exporter order; not inferable from shape"
+      },
+      "M": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-audit.csv",
+        "format": "csv",
+        "columns": [
+          "p_efflux",
+          "p_influx",
+          "p_pampa"
+        ],
+        "mechanism_order": [
+          "efflux",
+          "influx",
+          "pampa"
+        ],
+        "smiles_column": "original_smiles",
+        "shape": [
+          7593,
+          3
+        ],
+        "row_alignment": "exact_SMILES_sequence:original_smiles",
+        "sha256": "23b5a94cb8478a305459eb18d08b3cc4a9bb5ee7ad742b570803c197e4060190"
+      }
+    },
+    "val": {
+      "H": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/val-pooled.npy",
+        "shape": [
+          727,
+          2048
+        ],
+        "sha256": "309d2509bcba285503fba53f7366081a217a4df8b204d6a8c2c7fb840066fbb3",
+        "row_alignment": "assumed unchanged exporter order; not inferable from shape"
+      },
+      "M": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-audit.csv",
+        "format": "csv",
+        "columns": [
+          "p_efflux",
+          "p_influx",
+          "p_pampa"
+        ],
+        "mechanism_order": [
+          "efflux",
+          "influx",
+          "pampa"
+        ],
+        "smiles_column": "original_smiles",
+        "shape": [
+          727,
+          3
+        ],
+        "row_alignment": "exact_SMILES_sequence:original_smiles",
+        "sha256": "0c033921105d3409a4691d54c8e109db433f49cca9055854dafad561cb69d034"
+      }
+    },
+    "test": {
+      "H": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/test-pooled.npy",
+        "shape": [
+          942,
+          2048
+        ],
+        "sha256": "b051694864d26a53e8ccf221679a04f3add7d491b21fe8c70aacf8e838c22653",
+        "row_alignment": "assumed unchanged exporter order; not inferable from shape"
+      },
+      "M": {
+        "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/test-mechanism-audit.csv",
+        "format": "csv",
+        "columns": [
+          "p_efflux",
+          "p_influx",
+          "p_pampa"
+        ],
+        "mechanism_order": [
+          "efflux",
+          "influx",
+          "pampa"
+        ],
+        "smiles_column": "original_smiles",
+        "shape": [
+          942,
+          3
+        ],
+        "row_alignment": "exact_SMILES_sequence:original_smiles",
+        "sha256": "3689ebd0fe96035082387e67f24559c042379e73dfbc41ca30f81d501f54b61b"
+      }
+    }
+  },
+  "row_alignment_limit": "Shape and filenames cannot prove row identity. The prior exporter must have kept original classification CSV order. If arrays were reordered, use explicit row-ID joins before training.",
+  "source_labels": "Mechanism inputs are auxiliary-model predictions, not mechanism assay truth.",
+  "baseline_limit": "H comes from an already BBB-trained baseline and is frozen for head refits.",
+  "dimension_alone_is_not_provenance": true
+}

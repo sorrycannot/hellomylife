@@ -1,0 +1,102 @@
+[
+  {
+    "mode": "full_fusion",
+    "indices": [
+      0,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/unweighted__full_fusion/model.txt",
+    "sha256": "87a36bf50c9b0e47fdaf30ec160bbb2aaab2a35161d87f9b4002faead004124b",
+    "key": "full_fusion_unweighted"
+  },
+  {
+    "mode": "full_fusion",
+    "indices": [
+      2,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/V01_V03__full_fusion/model.txt",
+    "sha256": "f923d35a7d02948164b1775be0a7fe030872f9d699a724bfd741492ece606c57",
+    "key": "full_fusion_V01_V03"
+  },
+  {
+    "mode": "efflux_influx",
+    "indices": [
+      0,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/unweighted__efflux_influx/model.txt",
+    "sha256": "5c9cd9c5fe372ad0633583f01cc77d0c60d9b07a47dd04e1b310f77edf0ce193",
+    "key": "efflux_influx_unweighted"
+  },
+  {
+    "mode": "efflux_influx",
+    "indices": [
+      2,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/V01_V03__efflux_influx/model.txt",
+    "sha256": "b5a435a03c3036e7210c8d7644d8b8953187c2922d406fb735f08eff245a9502",
+    "key": "efflux_influx_V01_V03"
+  },
+  {
+    "mode": "efflux_pampa",
+    "indices": [
+      0,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/unweighted__efflux_pampa/model.txt",
+    "sha256": "bea009db1493cb2058a9940619f05351d485c5af03b05075a9e4e043557f3ee7",
+    "key": "efflux_pampa_unweighted"
+  },
+  {
+    "mode": "efflux_pampa",
+    "indices": [
+      2,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/V01_V03__efflux_pampa/model.txt",
+    "sha256": "52574a0fb7f1c7c423f564769ce83a7c0d4d09864fdfcffebdb858f8533d5f4c",
+    "key": "efflux_pampa_V01_V03"
+  },
+  {
+    "mode": "influx_pampa",
+    "indices": [
+      0,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/unweighted__influx_pampa/model.txt",
+    "sha256": "1053187e73e451f0c36a653ff1399d66c011afff0574a2fdbdc88d7a5c638d19",
+    "key": "influx_pampa_unweighted"
+  },
+  {
+    "mode": "influx_pampa",
+    "indices": [
+      2,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/V01_V03__influx_pampa/model.txt",
+    "sha256": "832c8befb7b58ff482fca8274cabb881654469270c5a9b40bf2a146d62f378b3",
+    "key": "influx_pampa_V01_V03"
+  },
+  {
+    "mode": "H_only",
+    "indices": [
+      0,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/unweighted__baseline/model.txt",
+    "sha256": "79ab75db5153f33f291555eb14a8c35f2f10a00091e7dcf6feb7d0a181f5fd26",
+    "key": "H_only_unweighted"
+  },
+  {
+    "mode": "H_only",
+    "indices": [
+      2,
+      0
+    ],
+    "relative_path": "titan_priority_bayes_seed42_results/attempt_bayes003/ablation_evaluation/attempt_001/models/V01_V03__baseline/model.txt",
+    "sha256": "37cc6e00cd59415e0ccf822ad424d7bb9c6c2d4e9ef397558d1787c1180411e8",
+    "key": "H_only_V01_V03"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "mode": "baseline",
+  "seed": 42,
+  "best_epoch": 2,
+  "best_val_loss": 0.30306947505949616,
+  "threshold": 0.7,
+  "checkpoint": {
+    "path": "/root/project/titanBBB/TITAN-BBB-main/titan_attention_ablation_seed42_results/experiments/baseline/attempt_001/baseline_seed42/best_model.pth",
+    "sha256": "9e46759795a80b3c8e6d364e964101f84529c0adaad3a6184d11c07201b47846"
+  },
+  "validation": {
+    "n": 727,
+    "threshold": 0.7,
+    "TN": 264,
+    "FP": 29,
+    "FN": 115,
+    "TP": 319,
+    "ACC": 0.8019257221458047,
+    "BACC": 0.8180234661298187,
+    "SN": 0.7350230414746544,
+    "SP": 0.9010238907849829,
+    "F1": 0.8158567774936062,
+    "MCC": 0.6245376291591535,
+    "AUROC": 0.9117582296598039,
+    "AUPRC_AP": 0.9382624681435235
+  }
+}

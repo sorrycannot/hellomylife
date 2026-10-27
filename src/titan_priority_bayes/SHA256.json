@@ -1,0 +1,18 @@
+{
+  "README.txt": "fb2ade51811c50045ee54a1f14d28968acf8b473840b776fc609039eb53b22df",
+  "VERIFICATION.json": "cb86877e1bd7345dc6705a7bf6847fb0989ca8388719d66542fd0cc14275fc5a",
+  "priority_bayes/__init__.py": "de03faae116b1af8d5b658924c6142fe3e944dd2cb7076c052d534b8d2e0bdcf",
+  "priority_bayes/chemistry.py": "c350f834dcdd3eb07f3e9cbe601bae18d989d01600115163e8272c48376c03d6",
+  "priority_bayes/cli.py": "83cd5d6879c9517f19b26c1b7cd6820a0b89ac2fb40d73191006837204098819",
+  "priority_bayes/inputs.py": "4e27b3e07ebbc6894318b9cd25c29f88a541fc1f70789258d49836310bfe42f8",
+  "priority_bayes/protocol.py": "4b0686e97baf9e106509c36838aec8283d362ddbcf433322e72b9eac81b1e502",
+  "priority_bayes/reference_rules.json": "9fb5b2caef2115edc4fe8724042173509f5633c9a68b0e0f61305973501d1b9f",
+  "priority_bayes/report.py": "4415e1369375b3abf8238bc505e547751cdf6c3c6f935e021e5cbfc2ef2f010c",
+  "priority_bayes/training.py": "013d344ad616fec91d07efe7d9e1a3fe8525e5f29b4685cefa1cd3640d030bef",
+  "requirements.txt": "c2356817d4e12a5195edef1ae88360ac6f6d895f82a85cc8319ca676ca3271a8",
+  "run_priority_bayes.py": "360711119581c509ce6dfa6cc66c21bfe67954179b53e598b3e7cfcf287433fd",
+  "tests/test_chemistry.py": "fb652945b95bbce96b0c102a2f4e450dfd9895754b114dde2d5f2a00fdd7e703",
+  "tests/test_inputs.py": "7520953109a9ce868f328da8db567e62a94c9c32f8559c6dad296098e6f358ef",
+  "tests/test_protocol.py": "ce3f1c4ab205d2f1a49efc994dc59592f4e27ae0b56ff03e85b03035469ed060",
+  "tests/test_workflow.py": "c72a5edf237fd177ba7676b2b9b75f29bce1e32ede970d3c5a815c5b4c392026"
+}

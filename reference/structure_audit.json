@@ -1,0 +1,214 @@
+{
+  "inputs": {
+    "train": {
+      "dataset": "/root/project/titanBBB/TITAN-BBB-main/dataset/train_classification.csv",
+      "selected_arrays": {
+        "H": {
+          "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/train-pooled.npy",
+          "shape": [
+            7593,
+            2048
+          ],
+          "sha256": "ad32cbce2aba233e40fb29d52e71dbf2e31577e4405092620594814ac8a6ed32",
+          "row_alignment": "assumed unchanged exporter order; not inferable from shape",
+          "evaluation_row_alignment": "historical_exporter_order; original bytes verified"
+        },
+        "M": {
+          "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/train-mechanism-audit.csv",
+          "format": "csv",
+          "columns": [
+            "p_efflux",
+            "p_influx",
+            "p_pampa"
+          ],
+          "mechanism_order": [
+            "efflux",
+            "influx",
+            "pampa"
+          ],
+          "smiles_column": "original_smiles",
+          "shape": [
+            7593,
+            3
+          ],
+          "row_alignment": "exact_SMILES_sequence:original_smiles",
+          "sha256": "23b5a94cb8478a305459eb18d08b3cc4a9bb5ee7ad742b570803c197e4060190",
+          "evaluation_row_alignment": "exact_SMILES_sequence"
+        }
+      },
+      "mechanism_order": [
+        "efflux",
+        "influx",
+        "pampa"
+      ],
+      "shape": [
+        7593,
+        2051
+      ],
+      "row_limit": "Bare-array historical row order is inherited, not independently proved by a shape or hash."
+    },
+    "val": {
+      "dataset": "/root/project/titanBBB/TITAN-BBB-main/dataset/val_classification.csv",
+      "selected_arrays": {
+        "H": {
+          "path": "/root/project/titanBBB/TITAN-BBB-main/titan_classifier_comparison_seed42_results/features/attempt_001/val-pooled.npy",
+          "shape": [
+            727,
+            2048
+          ],
+          "sha256": "309d2509bcba285503fba53f7366081a217a4df8b204d6a8c2c7fb840066fbb3",
+          "row_alignment": "assumed unchanged exporter order; not inferable from shape",
+          "evaluation_row_alignment": "historical_exporter_order; original bytes verified"
+        },
+        "M": {
+          "path": "/root/project/titanBBB/TITAN-BBB-main/mechanism_features/val-mechanism-audit.csv",
+          "format": "csv",
+          "columns": [
+            "p_efflux",
+            "p_influx",
+            "p_pampa"
+          ],
+          "mechanism_order": [
+            "efflux",
+            "influx",
+            "pampa"
+          ],
+          "smiles_column": "original_smiles",
+          "shape": [
+            727,
+            3
+          ],
+          "row_alignment": "exact_SMILES_sequence:original_smiles",
+          "sha256": "0c033921105d3409a4691d54c8e109db433f49cca9055854dafad561cb69d034",
+          "evaluation_row_alignment": "exact_SMILES_sequence"
+        }
+      },
+      "mechanism_order": [
+        "efflux",
+        "influx",
+        "pampa"
+      ],
+      "shape": [
+        727,
+        2051
+      ],
+      "row_limit": "Bare-array historical row order is inherited, not independently proved by a shape or hash."
+    }
+  },
+  "structure": {
+    "validation_calibration": {
+      "n_rules": 17,
+      "n_validation_primary_units": 723,
+      "exact_member_sets_reproduced": true
+    },
+    "coverage": [
+      {
+        "split": "train",
+        "candidate": "V01",
+        "raw_training_or_validation_rows": 1142,
+        "units": 1142,
+        "positive": 220,
+        "negative": 922,
+        "connectivity_groups": 514
+      },
+      {
+        "split": "train",
+        "candidate": "V03",
+        "raw_training_or_validation_rows": 530,
+        "units": 530,
+        "positive": 257,
+        "negative": 273,
+        "connectivity_groups": 237
+      },
+      {
+        "split": "val",
+        "candidate": "V01",
+        "raw_training_or_validation_rows": 127,
+        "units": 127,
+        "positive": 18,
+        "negative": 109,
+        "connectivity_groups": 93
+      },
+      {
+        "split": "val",
+        "candidate": "V03",
+        "raw_training_or_validation_rows": 41,
+        "units": 41,
+        "positive": 16,
+        "negative": 25,
+        "connectivity_groups": 33
+      }
+    ],
+    "training_coverage_matches_reported_audit": true,
+    "active_rules": [
+      "V01",
+      "V03"
+    ],
+    "primary_identity": "canonical isomeric SMILES; no stereochemistry pooling",
+    "matching": "original calibrated sparse-ID + radius + atom-environment string; Morgan radius2 fpSize2048 no chirality",
+    "fit_rows": "All original 7593 train rows stay aligned. Invalid, multicomponent, or conflicting-identity rows get structure weight 1; no rows are deleted from any arm.",
+    "normalization": "none; existing scale_pos_weight stays fixed; class weight totals are reported",
+    "val_primary_units": 723
+  },
+  "core_rules": [
+    "V01",
+    "V03"
+  ],
+  "reserve_rules": [
+    "V02",
+    "V04",
+    "V05",
+    "V06",
+    "V08",
+    "V12"
+  ],
+  "reserve_coverage_matches_reported_audit": {
+    "V02": true,
+    "V04": true,
+    "V05": true,
+    "V06": true,
+    "V08": true,
+    "V12": true
+  },
+  "expected_reserve_coverage": {
+    "V02": {
+      "units": 36,
+      "positive": 21,
+      "negative": 15,
+      "connectivity_groups": 24
+    },
+    "V04": {
+      "units": 123,
+      "positive": 73,
+      "negative": 50,
+      "connectivity_groups": 71
+    },
+    "V05": {
+      "units": 67,
+      "positive": 30,
+      "negative": 37,
+      "connectivity_groups": 44
+    },
+    "V06": {
+      "units": 111,
+      "positive": 65,
+      "negative": 46,
+      "connectivity_groups": 85
+    },
+    "V08": {
+      "units": 329,
+      "positive": 215,
+      "negative": 114,
+      "connectivity_groups": 215
+    },
+    "V12": {
+      "units": 1037,
+      "positive": 391,
+      "negative": 646,
+      "connectivity_groups": 505
+    }
+  },
+  "overlap_rule": "max(a,b); within-group union, no repeated stacking",
+  "known_reference": "old V01=V03=1.10 is NEW (core=1.10,reserve=1.00)",
+  "no_test_structures_or_labels_used": true
+}

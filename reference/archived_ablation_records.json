@@ -1,0 +1,2938 @@
+{
+  "efflux_influx__baseline": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__baseline",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "baseline",
+      "mechanism_mask": null,
+      "input_dim": 2048,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9225004325191488,
+        "AUPRC_AP": 0.9453735628637245,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9225004325191488,
+        "AUPRC_AP": 0.9453735628637245,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "ea1b7381694e9b8d5282280356f9335b35fb7746b09716df7a66a305d89928b9",
+    "best_iteration": 188,
+    "seconds": 0.03493735380470753,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "89baf4e7a4197c9478596b857b28cf3e29deef808f030650016012c1179572c5",
+      "model.txt": "ea1b7381694e9b8d5282280356f9335b35fb7746b09716df7a66a305d89928b9",
+      "val_probability.npy": "aab07c27c6d1962593635c908eee4006a14c54ca264952f3c129717674edcd29",
+      "fit_history.json": "acbc9531f2ed31ef7cdb80c56b484c3c068b0ae66db61059ee89d29b3983bf8d"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__baseline/model.txt"
+  },
+  "efflux_influx__efflux_influx": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__efflux_influx",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "efflux_influx",
+      "mechanism_mask": [
+        1,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": true
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9275412465988268,
+        "AUPRC_AP": 0.9479376881852337,
+        "ACC": 0.8431911966987621,
+        "BACC": 0.8459327472043535,
+        "SN": 0.8317972350230415,
+        "SP": 0.8600682593856656,
+        "F1": 0.8636363636363636,
+        "MCC": 0.6825675527624128,
+        "TN": 252,
+        "FP": 41,
+        "FN": 73,
+        "TP": 361
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9275412465988268,
+        "AUPRC_AP": 0.9479376881852337,
+        "ACC": 0.8431911966987621,
+        "BACC": 0.8459327472043535,
+        "SN": 0.8317972350230415,
+        "SP": 0.8600682593856656,
+        "F1": 0.8636363636363636,
+        "MCC": 0.6825675527624128,
+        "TN": 252,
+        "FP": 41,
+        "FN": 73,
+        "TP": 361
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "781459ef4a04f155f4675adb0a7700688a2abb091db6578120a3699ca6862e13",
+    "best_iteration": 276,
+    "seconds": 0.035718921571969986,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "416ee16a5ac4915ae8e3ccbcfc634ce03dc371fbcea1fef3916d72e24ffdc469",
+      "model.txt": "781459ef4a04f155f4675adb0a7700688a2abb091db6578120a3699ca6862e13",
+      "val_probability.npy": "e5bc40660fd88a91dac9760bd0ae3db59479da2d54bdef62b485f24b3c835b22",
+      "fit_history.json": "89a672d8c313bcda79dfc690f237238a41097e3f1d3f679714d6d7e0cd992039"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__efflux_influx/model.txt"
+  },
+  "efflux_influx__efflux_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__efflux_only",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "efflux_only",
+      "mechanism_mask": [
+        1,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9185959642031425,
+        "AUPRC_AP": 0.9428362201580229,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8275428193957315,
+        "SN": 0.8018433179723502,
+        "SP": 0.8532423208191127,
+        "F1": 0.8436363636363636,
+        "MCC": 0.6444937886872336,
+        "TN": 250,
+        "FP": 43,
+        "FN": 86,
+        "TP": 348
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9185959642031425,
+        "AUPRC_AP": 0.9428362201580229,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8275428193957315,
+        "SN": 0.8018433179723502,
+        "SP": 0.8532423208191127,
+        "F1": 0.8436363636363636,
+        "MCC": 0.6444937886872336,
+        "TN": 250,
+        "FP": 43,
+        "FN": 86,
+        "TP": 348
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 183,
+    "seconds": 7.153786676935852,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "b089d6669b181e0fbd3654071366a3501a71785feab765bff44848d7f28a26cb",
+      "model.txt": "7fd16c84998d97f31d2648816f63b85bcb4a13a855329691fd21591d88183e39",
+      "val_probability.npy": "30530c42e77fba6fd09370aeade202eca9a4c5c190f0d931ed9a0ae2131eb6de",
+      "fit_history.json": "2abd367aafc913c7aa033ab8b4622d6ddcd8a6b203e7eeae747caafb4e526d99"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__efflux_only/model.txt"
+  },
+  "efflux_influx__efflux_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__efflux_pampa",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "efflux_pampa",
+      "mechanism_mask": [
+        1,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.921662918167377,
+        "AUPRC_AP": 0.9445598171789772,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8298469668611692,
+        "SN": 0.8064516129032258,
+        "SP": 0.8532423208191127,
+        "F1": 0.8464328899637243,
+        "MCC": 0.6493093501810042,
+        "TN": 250,
+        "FP": 43,
+        "FN": 84,
+        "TP": 350
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.921662918167377,
+        "AUPRC_AP": 0.9445598171789772,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8298469668611692,
+        "SN": 0.8064516129032258,
+        "SP": 0.8532423208191127,
+        "F1": 0.8464328899637243,
+        "MCC": 0.6493093501810042,
+        "TN": 250,
+        "FP": 43,
+        "FN": 84,
+        "TP": 350
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 190,
+    "seconds": 7.324113501235843,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "45e827c62aa6c8596f8604d47217b6d10ed36967ba48e1abe2fabd73d7a24b01",
+      "model.txt": "77d3d234852dcb9007786e061871c2ba51b3befff30e22727b00a42cc02914a2",
+      "val_probability.npy": "7ff19b92a4a5c7e34d1c184db4c3c7a9fdcf9dba46e5ac21ea52f440b93a8f4c",
+      "fit_history.json": "1fbd3bffc8305b84055afd697ff769f4a0062e9664eeca7fd3c738ff47db0744"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__efflux_pampa/model.txt"
+  },
+  "efflux_influx__full_fusion": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__full_fusion",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "full_fusion",
+      "mechanism_mask": [
+        1,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9224060647048645,
+        "AUPRC_AP": 0.9450953094553419,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8298469668611692,
+        "SN": 0.8064516129032258,
+        "SP": 0.8532423208191127,
+        "F1": 0.8464328899637243,
+        "MCC": 0.6493093501810042,
+        "TN": 250,
+        "FP": 43,
+        "FN": 84,
+        "TP": 350
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9224060647048645,
+        "AUPRC_AP": 0.9450953094553419,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8298469668611692,
+        "SN": 0.8064516129032258,
+        "SP": 0.8532423208191127,
+        "F1": 0.8464328899637243,
+        "MCC": 0.6493093501810042,
+        "TN": 250,
+        "FP": 43,
+        "FN": 84,
+        "TP": 350
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 192,
+    "seconds": 7.360173715278506,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "651c243d24a102536cbdee2db9ff0b7fdaefdfa37119097165a91add6ce7ba64",
+      "model.txt": "785ff90d116ac3c4ad6521ed7afdd801b3c81c007ac5e6c0c76a122620385374",
+      "val_probability.npy": "c640d0375fa8adaf6a7a0a3a4990cdd0c0efc3457a65a33895f98e40c44efdd1",
+      "fit_history.json": "e30d47cd669ecc887ff0b04ecd38e4d9a19e2b420ce27302730808cec74c2819"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__full_fusion/model.txt"
+  },
+  "efflux_influx__influx_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__influx_only",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "influx_only",
+      "mechanism_mask": [
+        0,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9185959642031425,
+        "AUPRC_AP": 0.9428362201580229,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8275428193957315,
+        "SN": 0.8018433179723502,
+        "SP": 0.8532423208191127,
+        "F1": 0.8436363636363636,
+        "MCC": 0.6444937886872336,
+        "TN": 250,
+        "FP": 43,
+        "FN": 86,
+        "TP": 348
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9185959642031425,
+        "AUPRC_AP": 0.9428362201580229,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8275428193957315,
+        "SN": 0.8018433179723502,
+        "SP": 0.8532423208191127,
+        "F1": 0.8436363636363636,
+        "MCC": 0.6444937886872336,
+        "TN": 250,
+        "FP": 43,
+        "FN": 86,
+        "TP": 348
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 183,
+    "seconds": 7.131833083927631,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "3d4cc316f58b886e30e70cd45992cd649fec98d36a69166a3d3d0d8c170d6dbd",
+      "model.txt": "e89cb14b426f77cc31cf907148867280bb012c13f7c42f5621ac03d2a94c4444",
+      "val_probability.npy": "30530c42e77fba6fd09370aeade202eca9a4c5c190f0d931ed9a0ae2131eb6de",
+      "fit_history.json": "2abd367aafc913c7aa033ab8b4622d6ddcd8a6b203e7eeae747caafb4e526d99"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__influx_only/model.txt"
+  },
+  "efflux_influx__influx_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__influx_pampa",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "influx_pampa",
+      "mechanism_mask": [
+        0,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9237508060584138,
+        "AUPRC_AP": 0.9455481734335298,
+        "ACC": 0.8390646492434664,
+        "BACC": 0.8424765260061968,
+        "SN": 0.8248847926267281,
+        "SP": 0.8600682593856656,
+        "F1": 0.8595438175270108,
+        "MCC": 0.6751746226428241,
+        "TN": 252,
+        "FP": 41,
+        "FN": 76,
+        "TP": 358
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9237508060584138,
+        "AUPRC_AP": 0.9455481734335298,
+        "ACC": 0.8390646492434664,
+        "BACC": 0.8424765260061968,
+        "SN": 0.8248847926267281,
+        "SP": 0.8600682593856656,
+        "F1": 0.8595438175270108,
+        "MCC": 0.6751746226428241,
+        "TN": 252,
+        "FP": 41,
+        "FN": 76,
+        "TP": 358
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "f840d2760e1f8abcc7a5c30ec269ebbd1f863beafbabfcd8cf711784e29f0e87",
+    "best_iteration": 238,
+    "seconds": 0.03565596416592598,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "0b1a283f5dd6f5f546383286a52c40697847cf90498cadaafa36537ee612cbc2",
+      "model.txt": "f840d2760e1f8abcc7a5c30ec269ebbd1f863beafbabfcd8cf711784e29f0e87",
+      "val_probability.npy": "e9cb148afa2907bb9b193eeaf9be363f9eb264e3ad156e13f384291fc4c17966",
+      "fit_history.json": "8d0b8c016bce184b69292723ff90e82abdf8b45b90339c7d9396c9bd146f9b36"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__influx_pampa/model.txt"
+  },
+  "efflux_influx__pampa_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__pampa_only",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "pampa_only",
+      "mechanism_mask": [
+        0,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9244389047042355,
+        "AUPRC_AP": 0.9461135450465856,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8309990405938881,
+        "SN": 0.8087557603686636,
+        "SP": 0.8532423208191127,
+        "F1": 0.8478260869565217,
+        "MCC": 0.6517261962636834,
+        "TN": 250,
+        "FP": 43,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9244389047042355,
+        "AUPRC_AP": 0.9461135450465856,
+        "ACC": 0.8473177441540578,
+        "BACC": 0.8316478193170915,
+        "SN": 0.9124423963133641,
+        "SP": 0.7508532423208191,
+        "F1": 0.8770764119601329,
+        "MCC": 0.679969671289691,
+        "TN": 220,
+        "FP": 73,
+        "FN": 38,
+        "TP": 396
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 258,
+    "seconds": 9.093227420933545,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "f6869e5cbb14f9da06ce0e3aebbaf0ac8a273b71921bedd8be1140f22b044a93",
+      "model.txt": "412a3d9e2a58b5cb37ec91690fafaa5836e3514736fc3abad18c720d9df746d4",
+      "val_probability.npy": "40231fe16b4b54f99a3fea729f0b81319e1890c0a69c410108389a333bb9be8e",
+      "fit_history.json": "fe95120486760774b1112fbe1e7e3ad0a69ce2365b1ff5469cee05f1d956bc39"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__pampa_only/model.txt"
+  },
+  "efflux_influx__zero_control": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_influx__zero_control",
+      "weight_group": "efflux_influx",
+      "source_selected_mode": "efflux_influx",
+      "core_weight": 1.35,
+      "reserve_weight": 1.6,
+      "indices": [
+        7,
+        12
+      ],
+      "experiment": "zero_control",
+      "mechanism_mask": [
+        0,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9225004325191488,
+        "AUPRC_AP": 0.9453735628637245,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9225004325191488,
+        "AUPRC_AP": 0.9453735628637245,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 188,
+    "seconds": 7.276819996535778,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.6,
+      "positive_sum": 5128.799999999999,
+      "negative_sum": 3844.6499999999996
+    },
+    "files_sha256": {
+      "PLAN.json": "361bb3ab36471d8e781fa31ad9a78510c0f7aad01a2189da7f6b775bd69457d1",
+      "model.txt": "f4111aa85b409bc2b823ac379709f2614edf232b7695d45d7bfc09053b22f8e7",
+      "val_probability.npy": "aab07c27c6d1962593635c908eee4006a14c54ca264952f3c129717674edcd29",
+      "fit_history.json": "64ec7b0956351b6beca834b434a04b2b36aeb4e04c26d0a35577ddb3f3f9f02f"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_influx__zero_control/model.txt"
+  },
+  "efflux_pampa__baseline": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__baseline",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "baseline",
+      "mechanism_mask": null,
+      "input_dim": 2048,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9232986269483022,
+        "AUPRC_AP": 0.9451500011583314,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8321078624117269,
+        "SN": 0.804147465437788,
+        "SP": 0.8600682593856656,
+        "F1": 0.8470873786407767,
+        "MCC": 0.653341994473104,
+        "TN": 252,
+        "FP": 41,
+        "FN": 85,
+        "TP": 349
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9232986269483022,
+        "AUPRC_AP": 0.9451500011583314,
+        "ACC": 0.8500687757909215,
+        "BACC": 0.8339519667825294,
+        "SN": 0.9170506912442397,
+        "SP": 0.7508532423208191,
+        "F1": 0.8795580110497238,
+        "MCC": 0.6859022696275261,
+        "TN": 220,
+        "FP": 73,
+        "FN": 36,
+        "TP": 398
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "e9e3e4d6ca8842d2358b7ef578c94fc1cf21f811552529ded1ad2049bd8b12bc",
+    "best_iteration": 228,
+    "seconds": 0.03569155465811491,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "51b11975323c19de4f62538c21b148f355bdaca66c394d5ea347388bf9e0bb1b",
+      "model.txt": "e9e3e4d6ca8842d2358b7ef578c94fc1cf21f811552529ded1ad2049bd8b12bc",
+      "val_probability.npy": "7a6d8e5f3655ae7ed4590cedbafb9c7f4d9633f071b8be8ec4fcf715ffe42b7f",
+      "fit_history.json": "9364d1d4978f2c99fd31c2ea93f39e04b8b56376ea30ccbd9f7596457c08673b"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__baseline/model.txt"
+  },
+  "efflux_pampa__efflux_influx": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__efflux_influx",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "efflux_influx",
+      "mechanism_mask": [
+        1,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9240889573929318,
+        "AUPRC_AP": 0.9451504272927999,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8309990405938881,
+        "SN": 0.8087557603686636,
+        "SP": 0.8532423208191127,
+        "F1": 0.8478260869565217,
+        "MCC": 0.6517261962636834,
+        "TN": 250,
+        "FP": 43,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9240889573929318,
+        "AUPRC_AP": 0.9451504272927999,
+        "ACC": 0.8555708390646493,
+        "BACC": 0.8413323162580015,
+        "SN": 0.9147465437788018,
+        "SP": 0.7679180887372014,
+        "F1": 0.8832035595105673,
+        "MCC": 0.697443379919872,
+        "TN": 225,
+        "FP": 68,
+        "FN": 37,
+        "TP": 397
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "dda79f56f4b1dc0962d4dcfd7266396344a890981c2f393f8cec3bfaaa598c26",
+    "best_iteration": 201,
+    "seconds": 0.035537973046302795,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "3e9079522e173282323efb03bbee4653547b3450cd11a9bd02465dd3fb7ee2cf",
+      "model.txt": "dda79f56f4b1dc0962d4dcfd7266396344a890981c2f393f8cec3bfaaa598c26",
+      "val_probability.npy": "06f666dc2f6925f6a0a35f04f504e341de5308d0b86decd1a24990fbdb73e0b3",
+      "fit_history.json": "beff6e5033af27ed0d3f2af4ecd9c361142f306f823582c3403c7c896f499561"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__efflux_influx/model.txt"
+  },
+  "efflux_pampa__efflux_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__efflux_only",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "efflux_only",
+      "mechanism_mask": [
+        1,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.920149101146569,
+        "AUPRC_AP": 0.9427593447549539,
+        "ACC": 0.8308115543328748,
+        "BACC": 0.8350096727009642,
+        "SN": 0.8133640552995391,
+        "SP": 0.856655290102389,
+        "F1": 0.8516284680337757,
+        "MCC": 0.6597789075590139,
+        "TN": 251,
+        "FP": 42,
+        "FN": 81,
+        "TP": 353
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.920149101146569,
+        "AUPRC_AP": 0.9427593447549539,
+        "ACC": 0.8308115543328748,
+        "BACC": 0.8350096727009642,
+        "SN": 0.8133640552995391,
+        "SP": 0.856655290102389,
+        "F1": 0.8516284680337757,
+        "MCC": 0.6597789075590139,
+        "TN": 251,
+        "FP": 42,
+        "FN": 81,
+        "TP": 353
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 176,
+    "seconds": 6.876197664067149,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "806b224e23d7a2614b33f6ed77c35af48051c9e37e299356e95b989b64303057",
+      "model.txt": "a6ccc8717419c010e5d7c15064326357d4e9013d517af7ab63987e2c2bae2522",
+      "val_probability.npy": "0b85fcb15199198ae78a9c4af851606a9923ae9ddbf3c06606f4a6e7a8b42def",
+      "fit_history.json": "03922b56e8beae19b487c7d7c1d46445df0b1b18aa1cf63f435348d9d7fab5e6"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__efflux_only/model.txt"
+  },
+  "efflux_pampa__efflux_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__efflux_pampa",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "efflux_pampa",
+      "mechanism_mask": [
+        1,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": true
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.927533382614303,
+        "AUPRC_AP": 0.9479102997244473,
+        "ACC": 0.8349381017881705,
+        "BACC": 0.8395747157169595,
+        "SN": 0.815668202764977,
+        "SP": 0.863481228668942,
+        "F1": 0.855072463768116,
+        "MCC": 0.6686114177988409,
+        "TN": 253,
+        "FP": 40,
+        "FN": 80,
+        "TP": 354
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.927533382614303,
+        "AUPRC_AP": 0.9479102997244473,
+        "ACC": 0.8349381017881705,
+        "BACC": 0.8395747157169595,
+        "SN": 0.815668202764977,
+        "SP": 0.863481228668942,
+        "F1": 0.855072463768116,
+        "MCC": 0.6686114177988409,
+        "TN": 253,
+        "FP": 40,
+        "FN": 80,
+        "TP": 354
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "723fe71f9c6852c140f1ea6423eb5c8b68725dc371148115e9d0a2e3c2139875",
+    "best_iteration": 267,
+    "seconds": 0.03562238998711109,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "1115cc054ff0c2c43cd9bfa7549b10748d04a06ae44651a1b7b3dbb5b87bdf2f",
+      "model.txt": "723fe71f9c6852c140f1ea6423eb5c8b68725dc371148115e9d0a2e3c2139875",
+      "val_probability.npy": "fb7667eafa7c71ef17da74676f241490e12bc78c169a794a8c315854c3b828d6",
+      "fit_history.json": "c9813d62075e57f58f554d82697f10d0d54199ce4e6e63baa98c2e84db111988"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__efflux_pampa/model.txt"
+  },
+  "efflux_pampa__full_fusion": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__full_fusion",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "full_fusion",
+      "mechanism_mask": [
+        1,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9238491058649596,
+        "AUPRC_AP": 0.9459624298367852,
+        "ACC": 0.8363136176066025,
+        "BACC": 0.8401723785407591,
+        "SN": 0.8202764976958525,
+        "SP": 0.8600682593856656,
+        "F1": 0.8567990373044525,
+        "MCC": 0.6702788161871772,
+        "TN": 252,
+        "FP": 41,
+        "FN": 78,
+        "TP": 356
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9238491058649596,
+        "AUPRC_AP": 0.9459624298367852,
+        "ACC": 0.8363136176066025,
+        "BACC": 0.8401723785407591,
+        "SN": 0.8202764976958525,
+        "SP": 0.8600682593856656,
+        "F1": 0.8567990373044525,
+        "MCC": 0.6702788161871772,
+        "TN": 252,
+        "FP": 41,
+        "FN": 78,
+        "TP": 356
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "88fb8be51f0d6a0bb6c8521891d2a97fa6e3c48f4501ea38937718265ec711f7",
+    "best_iteration": 197,
+    "seconds": 0.034995438531041145,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "3b53cea099ec6da3a1fca09d672f7c7a74981e03a5b975e28143a13e83636ca8",
+      "model.txt": "88fb8be51f0d6a0bb6c8521891d2a97fa6e3c48f4501ea38937718265ec711f7",
+      "val_probability.npy": "a92c17b18385f8e4ad0930c5ac24c1044617c30a93486b6e67d506dc7f8c8124",
+      "fit_history.json": "7ee0224adf45e589ed68ff13eefc764715dbef2886fa0e1009f022356e2a4053"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__full_fusion/model.txt"
+  },
+  "efflux_pampa__influx_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__influx_only",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "influx_only",
+      "mechanism_mask": [
+        0,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9238805618030543,
+        "AUPRC_AP": 0.9452265424412911,
+        "ACC": 0.8335625859697386,
+        "BACC": 0.8373138201664019,
+        "SN": 0.8179723502304147,
+        "SP": 0.856655290102389,
+        "F1": 0.8543922984356197,
+        "MCC": 0.6646462861993362,
+        "TN": 251,
+        "FP": 42,
+        "FN": 79,
+        "TP": 355
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9238805618030543,
+        "AUPRC_AP": 0.9452265424412911,
+        "ACC": 0.8335625859697386,
+        "BACC": 0.8373138201664019,
+        "SN": 0.8179723502304147,
+        "SP": 0.856655290102389,
+        "F1": 0.8543922984356197,
+        "MCC": 0.6646462861993362,
+        "TN": 251,
+        "FP": 42,
+        "FN": 79,
+        "TP": 355
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 227,
+    "seconds": 8.186100185848773,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "4dfbb602ba5152046b050886c785a426796b6ded4eeab980e57e25fa53e0cdf6",
+      "model.txt": "132a72e8804cb98102e27d9cb3925b60031234e38dc460a3a272523d28da47c6",
+      "val_probability.npy": "9d0b08eba25006f8124caa147588f3cca4febdcc268597a2a2a70ba41779d731",
+      "fit_history.json": "f408e5b391d4271c3e28e9e0f8e60b302f9b8d3d8d01deb5dd54c5cd51e34c6e"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__influx_only/model.txt"
+  },
+  "efflux_pampa__influx_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__influx_pampa",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "influx_pampa",
+      "mechanism_mask": [
+        0,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9265700445101525,
+        "AUPRC_AP": 0.9470272488085982,
+        "ACC": 0.8390646492434664,
+        "BACC": 0.8419221150972775,
+        "SN": 0.8271889400921659,
+        "SP": 0.856655290102389,
+        "F1": 0.859880239520958,
+        "MCC": 0.6744579459850769,
+        "TN": 251,
+        "FP": 42,
+        "FN": 75,
+        "TP": 359
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9265700445101525,
+        "AUPRC_AP": 0.9470272488085982,
+        "ACC": 0.8390646492434664,
+        "BACC": 0.8419221150972775,
+        "SN": 0.8271889400921659,
+        "SP": 0.856655290102389,
+        "F1": 0.859880239520958,
+        "MCC": 0.6744579459850769,
+        "TN": 251,
+        "FP": 42,
+        "FN": 75,
+        "TP": 359
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "0d55a19040d5db24c922e0859565f960ed8379723eb878252bd9ed6561e6f328",
+    "best_iteration": 237,
+    "seconds": 0.0352760162204504,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "e78314e8876472956fd4451d802c279ab37f3b5e77fdec3abfbac3c6c9068c5c",
+      "model.txt": "0d55a19040d5db24c922e0859565f960ed8379723eb878252bd9ed6561e6f328",
+      "val_probability.npy": "91e84721bdb1b9329c37272fe5c0f0cd3b569e932f4f4392b8fc8f06c6bd0ad7",
+      "fit_history.json": "3af965e4a98f771c4d19ed5cf80f21cde8d610b67d8c61a233824777cd416aad"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__influx_pampa/model.txt"
+  },
+  "efflux_pampa__pampa_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__pampa_only",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "pampa_only",
+      "mechanism_mask": [
+        0,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9228228558846195,
+        "AUPRC_AP": 0.9451633465865481,
+        "ACC": 0.828060522696011,
+        "BACC": 0.832151114326607,
+        "SN": 0.8110599078341014,
+        "SP": 0.8532423208191127,
+        "F1": 0.8492159227985525,
+        "MCC": 0.6541491700465973,
+        "TN": 250,
+        "FP": 43,
+        "FN": 82,
+        "TP": 352
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9228228558846195,
+        "AUPRC_AP": 0.9451633465865481,
+        "ACC": 0.828060522696011,
+        "BACC": 0.832151114326607,
+        "SN": 0.8110599078341014,
+        "SP": 0.8532423208191127,
+        "F1": 0.8492159227985525,
+        "MCC": 0.6541491700465973,
+        "TN": 250,
+        "FP": 43,
+        "FN": 82,
+        "TP": 352
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 223,
+    "seconds": 8.142548732459545,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "2749b396d66b6a427be9ea0dcae00d3ee35371dfa00e14936a6984ae9c28e60a",
+      "model.txt": "b272695e74af67b8d64c6de762ac43f6aae98e2b94a58221afd9706b822d2798",
+      "val_probability.npy": "c6315f7713642922af86b9ff91427068f6fd95ebb7bbb2c01e1da0e5fb19de66",
+      "fit_history.json": "cc6496dc278d8dafdbe4a658186aa09525c3b9e0009a748d0934ea80ae2596fb"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__pampa_only/model.txt"
+  },
+  "efflux_pampa__zero_control": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "efflux_pampa__zero_control",
+      "weight_group": "efflux_pampa",
+      "source_selected_mode": "efflux_pampa",
+      "core_weight": 1.05,
+      "reserve_weight": 1.0,
+      "indices": [
+        1,
+        0
+      ],
+      "experiment": "zero_control",
+      "mechanism_mask": [
+        0,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9232986269483022,
+        "AUPRC_AP": 0.9451500011583314,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8321078624117269,
+        "SN": 0.804147465437788,
+        "SP": 0.8600682593856656,
+        "F1": 0.8470873786407767,
+        "MCC": 0.653341994473104,
+        "TN": 252,
+        "FP": 41,
+        "FN": 85,
+        "TP": 349
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9232986269483022,
+        "AUPRC_AP": 0.9451500011583314,
+        "ACC": 0.8500687757909215,
+        "BACC": 0.8339519667825294,
+        "SN": 0.9170506912442397,
+        "SP": 0.7508532423208191,
+        "F1": 0.8795580110497238,
+        "MCC": 0.6859022696275261,
+        "TN": 220,
+        "FP": 73,
+        "FN": 36,
+        "TP": 398
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 228,
+    "seconds": 8.249385317787528,
+    "sample_weight_summary": {
+      "n_upweighted": 1575,
+      "min": 1.0,
+      "max": 1.05,
+      "positive_sum": 4586.8,
+      "negative_sum": 3084.9500000000003
+    },
+    "files_sha256": {
+      "PLAN.json": "be0353bcda645040b22bd8175fa72cc5786150654f62005da76a2b4ab63d5e40",
+      "model.txt": "5cb6b3063a0587874f15b0a156aeb52b1f5555198941e3c7d3ed6640f944c28d",
+      "val_probability.npy": "7a6d8e5f3655ae7ed4590cedbafb9c7f4d9633f071b8be8ec4fcf715ffe42b7f",
+      "fit_history.json": "3cc1afc75e2ce40242c799b17071e917b6b84e3e2cd43376f7f6e37e19fcc4d0"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/efflux_pampa__zero_control/model.txt"
+  },
+  "full_fusion__baseline": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__baseline",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "baseline",
+      "mechanism_mask": null,
+      "input_dim": 2048,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9218516537959452,
+        "AUPRC_AP": 0.9444303719903767,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8264339975778927,
+        "SN": 0.8064516129032258,
+        "SP": 0.8464163822525598,
+        "F1": 0.8443908323281062,
+        "MCC": 0.6428896950217643,
+        "TN": 248,
+        "FP": 45,
+        "FN": 84,
+        "TP": 350
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9218516537959452,
+        "AUPRC_AP": 0.9444303719903767,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8264339975778927,
+        "SN": 0.8064516129032258,
+        "SP": 0.8464163822525598,
+        "F1": 0.8443908323281062,
+        "MCC": 0.6428896950217643,
+        "TN": 248,
+        "FP": 45,
+        "FN": 84,
+        "TP": 350
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "723c79cd1e162d0ac84f9f8d630c3ecb5b4d2ac64282dac7eb5baf349194dc14",
+    "best_iteration": 199,
+    "seconds": 0.03542149160057306,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "9c116e340936b8ed649eb4d1f20c3a8e6301ac5a705a248e6980a0b614eb941c",
+      "model.txt": "723c79cd1e162d0ac84f9f8d630c3ecb5b4d2ac64282dac7eb5baf349194dc14",
+      "val_probability.npy": "ad4b7f48ebd850c9260b1de60dc9e11f8b263dfc9145688b15853e65cb7d4a58",
+      "fit_history.json": "31790350c4d1c5b5c942faf6df24443bd2bcde8366a04df57cc5e6dfc3458e4c"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__baseline/model.txt"
+  },
+  "full_fusion__efflux_influx": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__efflux_influx",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "efflux_influx",
+      "mechanism_mask": [
+        1,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9208961796763183,
+        "AUPRC_AP": 0.9440616250760974,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8304446296849688,
+        "SN": 0.8110599078341014,
+        "SP": 0.8498293515358362,
+        "F1": 0.8481927710843373,
+        "MCC": 0.6509472235239622,
+        "TN": 249,
+        "FP": 44,
+        "FN": 82,
+        "TP": 352
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9208961796763183,
+        "AUPRC_AP": 0.9440616250760974,
+        "ACC": 0.8500687757909215,
+        "BACC": 0.8339519667825294,
+        "SN": 0.9170506912442397,
+        "SP": 0.7508532423208191,
+        "F1": 0.8795580110497238,
+        "MCC": 0.6859022696275261,
+        "TN": 220,
+        "FP": 73,
+        "FN": 36,
+        "TP": 398
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "d5b881cd59a7c60cd6883eb5528766eef29545bfda1d27b90464667ab9dedc95",
+    "best_iteration": 202,
+    "seconds": 0.03570543322712183,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "b4becc7bda48ad60e5901b6709567a2678aa5b57d2cd0c6a3582bb032f95d9a3",
+      "model.txt": "d5b881cd59a7c60cd6883eb5528766eef29545bfda1d27b90464667ab9dedc95",
+      "val_probability.npy": "263722da859845bd5fe338043ac07af7d03e348c1dba7d0faa8a2c3ac93f7a64",
+      "fit_history.json": "cd7d488572dfd8fdfb185a81a6e9bf9468cafe3c9d5a4ced46d44f51f70f9f89"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__efflux_influx/model.txt"
+  },
+  "full_fusion__efflux_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__efflux_only",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "efflux_only",
+      "mechanism_mask": [
+        1,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9230666394048536,
+        "AUPRC_AP": 0.9453871979545692,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8383793900693604,
+        "SN": 0.8064516129032258,
+        "SP": 0.8703071672354948,
+        "F1": 0.851581508515815,
+        "MCC": 0.6654215505652409,
+        "TN": 255,
+        "FP": 38,
+        "FN": 84,
+        "TP": 350
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9230666394048536,
+        "AUPRC_AP": 0.9453871979545692,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8383793900693604,
+        "SN": 0.8064516129032258,
+        "SP": 0.8703071672354948,
+        "F1": 0.851581508515815,
+        "MCC": 0.6654215505652409,
+        "TN": 255,
+        "FP": 38,
+        "FN": 84,
+        "TP": 350
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 235,
+    "seconds": 8.524041764438152,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "2ac23c24c5ba9b1ac433a8ebcbdde859635f5abd2696d4a26de36ddd133780e7",
+      "model.txt": "06cef8b88df409c310e5bbb847a26b5fe2ab3b8f1a5e25c32e62f62a13c67391",
+      "val_probability.npy": "87e4839dda792e03d604728559a5624f1cdc0380c0f1a79a107be96952b4a614",
+      "fit_history.json": "aa9b52d1b8a3ac25d25079b8224aa780276af206747f7001eb3ea0410b3a07aa"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__efflux_only/model.txt"
+  },
+  "full_fusion__efflux_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__efflux_pampa",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "efflux_pampa",
+      "mechanism_mask": [
+        1,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9192014910114656,
+        "AUPRC_AP": 0.9428168901339781,
+        "ACC": 0.8156808803301238,
+        "BACC": 0.8190103961875403,
+        "SN": 0.8018433179723502,
+        "SP": 0.8361774744027304,
+        "F1": 0.8385542168674699,
+        "MCC": 0.6284227765224428,
+        "TN": 245,
+        "FP": 48,
+        "FN": 86,
+        "TP": 348
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.9192014910114656,
+        "AUPRC_AP": 0.9428168901339781,
+        "ACC": 0.8376891334250344,
+        "BACC": 0.8213656595523819,
+        "SN": 0.9055299539170507,
+        "SP": 0.7372013651877133,
+        "F1": 0.8694690265486725,
+        "MCC": 0.6594663606275405,
+        "TN": 216,
+        "FP": 77,
+        "FN": 41,
+        "TP": 393
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "5d01d3b62327161ab05711189b2e1c775143e1fb920db2ac9abd66027627d84d",
+    "best_iteration": 201,
+    "seconds": 0.03514785785228014,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "d903658c485e1d63dc4c39787a21635ac3625214151e5a61d1a24cc5c7c29a90",
+      "model.txt": "5d01d3b62327161ab05711189b2e1c775143e1fb920db2ac9abd66027627d84d",
+      "val_probability.npy": "3471434df4e2bd2d62fc96f71f25f51f8acf05a645b754eb3be0c5075459b002",
+      "fit_history.json": "59e69c3d63c1df7ce3b108963f17ffe569dd18a5dec87f110f4aa6143b0b4378"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__efflux_pampa/model.txt"
+  },
+  "full_fusion__full_fusion": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__full_fusion",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "full_fusion",
+      "mechanism_mask": [
+        1,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": true
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9231767351881851,
+        "AUPRC_AP": 0.9447979696549166,
+        "ACC": 0.8418156808803301,
+        "BACC": 0.8453350843805539,
+        "SN": 0.8271889400921659,
+        "SP": 0.863481228668942,
+        "F1": 0.8619447779111644,
+        "MCC": 0.6808101215023113,
+        "TN": 253,
+        "FP": 40,
+        "FN": 75,
+        "TP": 359
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9231767351881851,
+        "AUPRC_AP": 0.9447979696549166,
+        "ACC": 0.8418156808803301,
+        "BACC": 0.8453350843805539,
+        "SN": 0.8271889400921659,
+        "SP": 0.863481228668942,
+        "F1": 0.8619447779111644,
+        "MCC": 0.6808101215023113,
+        "TN": 253,
+        "FP": 40,
+        "FN": 75,
+        "TP": 359
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "7f4fffb2b2cb41d44fcf5f84f46f6e61e59fefdd7c24347967d94f41c3efd28e",
+    "best_iteration": 235,
+    "seconds": 0.03522053360939026,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "b6b273fba9c6735cac850df4b98cdb9bc25571e367d56ce8ad75e9431608a9d3",
+      "model.txt": "7f4fffb2b2cb41d44fcf5f84f46f6e61e59fefdd7c24347967d94f41c3efd28e",
+      "val_probability.npy": "ca9e2cc08b4f3f133dd6850644f5e0fb2387526d1764e042744cd97a767d1d99",
+      "fit_history.json": "8421e90c4e4008a8804a2e4c29f36cf75f25d837f0a0602da5ff474d65643bb1"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__full_fusion/model.txt"
+  },
+  "full_fusion__influx_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__influx_only",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "influx_only",
+      "mechanism_mask": [
+        0,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.92305877542033,
+        "AUPRC_AP": 0.9453415946754136,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8378249791604411,
+        "SN": 0.8087557603686636,
+        "SP": 0.8668941979522184,
+        "F1": 0.8519417475728155,
+        "MCC": 0.6645890406349014,
+        "TN": 254,
+        "FP": 39,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.92305877542033,
+        "AUPRC_AP": 0.9453415946754136,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8378249791604411,
+        "SN": 0.8087557603686636,
+        "SP": 0.8668941979522184,
+        "F1": 0.8519417475728155,
+        "MCC": 0.6645890406349014,
+        "TN": 254,
+        "FP": 39,
+        "FN": 83,
+        "TP": 351
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 239,
+    "seconds": 8.588853444904089,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "4d26f2d7570f44dabbe5909e247692e2b6d215ee03b1067ff30f329b4fbbd181",
+      "model.txt": "4c21bfea750bf592719bd8fa5c000be91219ccdb2d6717ad3fb81ded42ded110",
+      "val_probability.npy": "d14f4ec0a1973173b9096be33b869560990ffdf700c29b269394274d187cb089",
+      "fit_history.json": "54dcc20e429ffa17e51f488d39acc297ba0231c3baf42f765ba9610a92fcf9fa"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__influx_only/model.txt"
+  },
+  "full_fusion__influx_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__influx_pampa",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "influx_pampa",
+      "mechanism_mask": [
+        0,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9217533539893994,
+        "AUPRC_AP": 0.9450010282137521,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9217533539893994,
+        "AUPRC_AP": 0.9450010282137521,
+        "ACC": 0.8253094910591472,
+        "BACC": 0.8292925559522499,
+        "SN": 0.8087557603686636,
+        "SP": 0.8498293515358362,
+        "F1": 0.8468033775633294,
+        "MCC": 0.6485194325341808,
+        "TN": 249,
+        "FP": 44,
+        "FN": 83,
+        "TP": 351
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "dd72d37a9f2c8094dbd2b7a80144d15852cfc0049d37c69953fe54b15408b7fd",
+    "best_iteration": 235,
+    "seconds": 0.035163248889148235,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "9a3d722c75a46cc7ce7d87b118f5f23d9d60cde62a252448ee9ec9e9262e353d",
+      "model.txt": "dd72d37a9f2c8094dbd2b7a80144d15852cfc0049d37c69953fe54b15408b7fd",
+      "val_probability.npy": "e94614d0474b1099db5a533801f0ad52ff423e50fb837d2b5db699b63bfc8d8b",
+      "fit_history.json": "f2aff8b63ef5f610e3de66e1df9e3cbfbdd8ff3ec2afbf995ab8fc0790b36b5a"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__influx_pampa/model.txt"
+  },
+  "full_fusion__pampa_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__pampa_only",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "pampa_only",
+      "mechanism_mask": [
+        0,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9221819411459398,
+        "AUPRC_AP": 0.9442304638263922,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8367161573426023,
+        "SN": 0.8133640552995391,
+        "SP": 0.8600682593856656,
+        "F1": 0.8526570048309179,
+        "MCC": 0.6629830106204551,
+        "TN": 252,
+        "FP": 41,
+        "FN": 81,
+        "TP": 353
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9221819411459398,
+        "AUPRC_AP": 0.9442304638263922,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.8367161573426023,
+        "SN": 0.8133640552995391,
+        "SP": 0.8600682593856656,
+        "F1": 0.8526570048309179,
+        "MCC": 0.6629830106204551,
+        "TN": 252,
+        "FP": 41,
+        "FN": 81,
+        "TP": 353
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 239,
+    "seconds": 8.59094337373972,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "4f0a594d8531be2849ac0cbfdbc091bfe36c4f3dd9f8b37a54a65b7ce2ac1d33",
+      "model.txt": "7b829bb74530fc0865f2e476295595e480fbada6e4f84bee4f5ec927006543d9",
+      "val_probability.npy": "27dfc3a7a32209d11786c8bcdebb0db3faacc1281679ba7d8bb4f8cd9bc13e8e",
+      "fit_history.json": "86df23ee27f6567b32a33f8e8d9541185519326bab027e1a1fc896f512953d1c"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__pampa_only/model.txt"
+  },
+  "full_fusion__zero_control": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "full_fusion__zero_control",
+      "weight_group": "full_fusion",
+      "source_selected_mode": "full_fusion",
+      "core_weight": 2.35,
+      "reserve_weight": 2.3,
+      "indices": [
+        27,
+        26
+      ],
+      "experiment": "zero_control",
+      "mechanism_mask": [
+        0,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9218516537959452,
+        "AUPRC_AP": 0.9444303719903767,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8264339975778927,
+        "SN": 0.8064516129032258,
+        "SP": 0.8464163822525598,
+        "F1": 0.8443908323281062,
+        "MCC": 0.6428896950217643,
+        "TN": 248,
+        "FP": 45,
+        "FN": 84,
+        "TP": 350
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9218516537959452,
+        "AUPRC_AP": 0.9444303719903767,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8264339975778927,
+        "SN": 0.8064516129032258,
+        "SP": 0.8464163822525598,
+        "F1": 0.8443908323281062,
+        "MCC": 0.6428896950217643,
+        "TN": 248,
+        "FP": 45,
+        "FN": 84,
+        "TP": 350
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 199,
+    "seconds": 7.601512766443193,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 2.35,
+      "positive_sum": 6014.200000000001,
+      "negative_sum": 5332.650000000001
+    },
+    "files_sha256": {
+      "PLAN.json": "9d07ac56de1827e128e3610eab7a7b8257b6513ba84766f7a6695bd1df7b7aec",
+      "model.txt": "bb065f7ced5bae0a11280b2e59a56ce99430b86304d76dd4ac7145164deb07e3",
+      "val_probability.npy": "ad4b7f48ebd850c9260b1de60dc9e11f8b263dfc9145688b15853e65cb7d4a58",
+      "fit_history.json": "64579381102550a22de7367aff658bfeee4b4ba5ab610b22c18de5970ab79d21"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/full_fusion__zero_control/model.txt"
+  },
+  "influx_pampa__baseline": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__baseline",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "baseline",
+      "mechanism_mask": null,
+      "input_dim": 2048,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9220443214167755,
+        "AUPRC_AP": 0.9432931813506824,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8304446296849688,
+        "SN": 0.8110599078341014,
+        "SP": 0.8498293515358362,
+        "F1": 0.8481927710843373,
+        "MCC": 0.6509472235239622,
+        "TN": 249,
+        "FP": 44,
+        "FN": 82,
+        "TP": 352
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9220443214167755,
+        "AUPRC_AP": 0.9432931813506824,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8304446296849688,
+        "SN": 0.8110599078341014,
+        "SP": 0.8498293515358362,
+        "F1": 0.8481927710843373,
+        "MCC": 0.6509472235239622,
+        "TN": 249,
+        "FP": 44,
+        "FN": 82,
+        "TP": 352
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "6ecb28e68c640d8ff79fa935bfea3813bdf69eedbd94bddfbfe1f3c5b79aa470",
+    "best_iteration": 185,
+    "seconds": 0.03471676539629698,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "cf4065d9653ec07a0d94339d932810b30880906fe39f8aedc978f309b36eb981",
+      "model.txt": "6ecb28e68c640d8ff79fa935bfea3813bdf69eedbd94bddfbfe1f3c5b79aa470",
+      "val_probability.npy": "95b26701da76540c98c42f4ea28a186ca2189a9c3ceb2488728d681fa8a0d06b",
+      "fit_history.json": "60538bf99b99a182a1627ec9d2bf4b577ed94f268661bed78f060a1954624efc"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__baseline/model.txt"
+  },
+  "influx_pampa__efflux_influx": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__efflux_influx",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "efflux_influx",
+      "mechanism_mask": [
+        1,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9249736556518457,
+        "AUPRC_AP": 0.9466331768689861,
+        "ACC": 0.8376891334250344,
+        "BACC": 0.8418788631823972,
+        "SN": 0.8202764976958525,
+        "SP": 0.863481228668942,
+        "F1": 0.8578313253012049,
+        "MCC": 0.6734716705254814,
+        "TN": 253,
+        "FP": 40,
+        "FN": 78,
+        "TP": 356
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9249736556518457,
+        "AUPRC_AP": 0.9466331768689861,
+        "ACC": 0.8376891334250344,
+        "BACC": 0.8418788631823972,
+        "SN": 0.8202764976958525,
+        "SP": 0.863481228668942,
+        "F1": 0.8578313253012049,
+        "MCC": 0.6734716705254814,
+        "TN": 253,
+        "FP": 40,
+        "FN": 78,
+        "TP": 356
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "8b970de0a22eb965a7d0bfe5d02172efb3b5dcb0e8c2ef9dcf4bc886e9af66ca",
+    "best_iteration": 174,
+    "seconds": 0.03551742993295193,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "dc4f5dcca112c6857f3193407eb12f77bec209725dea9c11fd3d2be15a7d698b",
+      "model.txt": "8b970de0a22eb965a7d0bfe5d02172efb3b5dcb0e8c2ef9dcf4bc886e9af66ca",
+      "val_probability.npy": "22360c74caccc5acc54df425d44fce5af821001085674a15458b8b1f45a098be",
+      "fit_history.json": "c6aff7e9189fa80a028982369798c633bfcde4f4ed60557032921558523babdb"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__efflux_influx/model.txt"
+  },
+  "influx_pampa__efflux_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__efflux_only",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "efflux_only",
+      "mechanism_mask": [
+        1,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9239277457101964,
+        "AUPRC_AP": 0.9464875844959209,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.836161746433683,
+        "SN": 0.815668202764977,
+        "SP": 0.856655290102389,
+        "F1": 0.8530120481927711,
+        "MCC": 0.6622094470247218,
+        "TN": 251,
+        "FP": 42,
+        "FN": 80,
+        "TP": 354
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9239277457101964,
+        "AUPRC_AP": 0.9464875844959209,
+        "ACC": 0.8321870701513068,
+        "BACC": 0.836161746433683,
+        "SN": 0.815668202764977,
+        "SP": 0.856655290102389,
+        "F1": 0.8530120481927711,
+        "MCC": 0.6622094470247218,
+        "TN": 251,
+        "FP": 42,
+        "FN": 80,
+        "TP": 354
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 237,
+    "seconds": 8.445680566132069,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "6004e22c390961cade649cecdcb3a91a02d37c982760cf2fb3fccd5a25d7284c",
+      "model.txt": "42910011db48998cebd80092b7166dd99c7b33badf4116ce2a33b32750048237",
+      "val_probability.npy": "b5d5afe0aadfc680c1de8d70081a7a1d8f9642d6707aeead59bafa1c48c24a0a",
+      "fit_history.json": "f1d993911b96cf0ab1f2a7e7db3f80ebd427eb3c2edffbdb0429938372a39d14"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__efflux_only/model.txt"
+  },
+  "influx_pampa__efflux_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__efflux_pampa",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "efflux_pampa",
+      "mechanism_mask": [
+        1,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9267941680690772,
+        "AUPRC_AP": 0.9468798021806241,
+        "ACC": 0.8376891334250344,
+        "BACC": 0.8424332740913165,
+        "SN": 0.8179723502304147,
+        "SP": 0.8668941979522184,
+        "F1": 0.857487922705314,
+        "MCC": 0.6742398249772268,
+        "TN": 254,
+        "FP": 39,
+        "FN": 79,
+        "TP": 355
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9267941680690772,
+        "AUPRC_AP": 0.9468798021806241,
+        "ACC": 0.8376891334250344,
+        "BACC": 0.8424332740913165,
+        "SN": 0.8179723502304147,
+        "SP": 0.8668941979522184,
+        "F1": 0.857487922705314,
+        "MCC": 0.6742398249772268,
+        "TN": 254,
+        "FP": 39,
+        "FN": 79,
+        "TP": 355
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 266,
+    "seconds": 9.168377729132771,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "89637b8a7d51ab80f653dea8f2059bb41207647b57312f6cc3eee071f87cff2c",
+      "model.txt": "e7156d3e64799dde9364aff5d86661c170dc412c2e6c8910ed3f5d6703b93041",
+      "val_probability.npy": "9390f828d937b9d9d2fbcd9504ec71837f123a4e58cde01dec251b70d9178dda",
+      "fit_history.json": "1441b325a6ffe262439b71224040243ca5ac4ff11e9b0a79323313bd755c8d3f"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__efflux_pampa/model.txt"
+  },
+  "influx_pampa__full_fusion": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__full_fusion",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "full_fusion",
+      "mechanism_mask": [
+        1,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9230784353816391,
+        "AUPRC_AP": 0.9450021786572149,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8258795866689734,
+        "SN": 0.8087557603686636,
+        "SP": 0.8430034129692833,
+        "F1": 0.8447653429602888,
+        "MCC": 0.6421161662479721,
+        "TN": 247,
+        "FP": 46,
+        "FN": 83,
+        "TP": 351
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9230784353816391,
+        "AUPRC_AP": 0.9450021786572149,
+        "ACC": 0.8225584594222833,
+        "BACC": 0.8258795866689734,
+        "SN": 0.8087557603686636,
+        "SP": 0.8430034129692833,
+        "F1": 0.8447653429602888,
+        "MCC": 0.6421161662479721,
+        "TN": 247,
+        "FP": 46,
+        "FN": 83,
+        "TP": 351
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 186,
+    "seconds": 7.185145209543407,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "51afb1843ed4a898b02f814b404df2287c64a610a5ad2c22210d2445f22491b3",
+      "model.txt": "584b3ff7baf4dd16987f5d96ad157941c176650c7893dd3a24767185f46b06a4",
+      "val_probability.npy": "055e4cba758bba42b4595f55df4a3ee1ee7d22206e4761c6de6d755a2ddf3e72",
+      "fit_history.json": "09ff0f7e22bd8643264ed9c576f0c183e6e536007d1e3d8e2f3084fc51801b4f"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__full_fusion/model.txt"
+  },
+  "influx_pampa__influx_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__influx_only",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "influx_only",
+      "mechanism_mask": [
+        0,
+        1,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.3
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.923546342460798,
+        "AUPRC_AP": 0.9455688407876377,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8298902187760495,
+        "SN": 0.8133640552995391,
+        "SP": 0.8464163822525598,
+        "F1": 0.8485576923076923,
+        "MCC": 0.6501875130040857,
+        "TN": 248,
+        "FP": 45,
+        "FN": 81,
+        "TP": 353
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.3,
+        "AUROC": 0.923546342460798,
+        "AUPRC_AP": 0.9455688407876377,
+        "ACC": 0.8473177441540578,
+        "BACC": 0.8322022302260109,
+        "SN": 0.9101382488479263,
+        "SP": 0.7542662116040956,
+        "F1": 0.876803551609323,
+        "MCC": 0.6799329690855059,
+        "TN": 221,
+        "FP": 72,
+        "FN": 39,
+        "TP": 395
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 236,
+    "seconds": 8.41807762440294,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "76e699e8e9fe4ce8ea95a7e6d3ce3b75b02fa068e52bf1783db457a1cbd6d525",
+      "model.txt": "6184f1068c717d1b56acc97e3b6a71c0a98c91f8c4586f27449d22b125627075",
+      "val_probability.npy": "772a09a662a84be77824c985dd6c6925dee25f05a85db5020015dec40e876d5e",
+      "fit_history.json": "91811a3970e4463c781b61578ba118de6076cbc3a4fa16280bb9adc02b0ab526"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__influx_only/model.txt"
+  },
+  "influx_pampa__influx_pampa": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__influx_pampa",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "influx_pampa",
+      "mechanism_mask": [
+        0,
+        1,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": true
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.927509790660732,
+        "AUPRC_AP": 0.9473214019940188,
+        "ACC": 0.8418156808803301,
+        "BACC": 0.8453350843805539,
+        "SN": 0.8271889400921659,
+        "SP": 0.863481228668942,
+        "F1": 0.8619447779111644,
+        "MCC": 0.6808101215023113,
+        "TN": 253,
+        "FP": 40,
+        "FN": 75,
+        "TP": 359
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.927509790660732,
+        "AUPRC_AP": 0.9473214019940188,
+        "ACC": 0.8418156808803301,
+        "BACC": 0.8453350843805539,
+        "SN": 0.8271889400921659,
+        "SP": 0.863481228668942,
+        "F1": 0.8619447779111644,
+        "MCC": 0.6808101215023113,
+        "TN": 253,
+        "FP": 40,
+        "FN": 75,
+        "TP": 359
+      }
+    },
+    "fit_mode": "reused_exact_validation_verified_grouped_checkpoint",
+    "reused_model_sha256": "ead30d075cb2a6b6d1a8ddb4eaae7512f72cc66f61fc3858cf33f324ab01d367",
+    "best_iteration": 283,
+    "seconds": 0.03583933040499687,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "241f0d7d232b744601093833cad99936e37c4f65581403408129bf6598a0c8cd",
+      "model.txt": "ead30d075cb2a6b6d1a8ddb4eaae7512f72cc66f61fc3858cf33f324ab01d367",
+      "val_probability.npy": "64b437cf95fb1e705fba4dc2db25da04ccdd08b9c92a591a697754a4972845fe",
+      "fit_history.json": "3d1d50e01ae7c764fe10355eabcaefbb89ae12124c7dfe785015774a40bb4389"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__influx_pampa/model.txt"
+  },
+  "influx_pampa__pampa_only": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__pampa_only",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "pampa_only",
+      "mechanism_mask": [
+        0,
+        0,
+        1
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9248950158066088,
+        "AUPRC_AP": 0.9460628316949549,
+        "ACC": 0.8335625859697386,
+        "BACC": 0.8356505874396439,
+        "SN": 0.8248847926267281,
+        "SP": 0.8464163822525598,
+        "F1": 0.8554360812425329,
+        "MCC": 0.6624773799380613,
+        "TN": 248,
+        "FP": 45,
+        "FN": 76,
+        "TP": 358
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9248950158066088,
+        "AUPRC_AP": 0.9460628316949549,
+        "ACC": 0.8335625859697386,
+        "BACC": 0.8356505874396439,
+        "SN": 0.8248847926267281,
+        "SP": 0.8464163822525598,
+        "F1": 0.8554360812425329,
+        "MCC": 0.6624773799380613,
+        "TN": 248,
+        "FP": 45,
+        "FN": 76,
+        "TP": 358
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 238,
+    "seconds": 8.53950601350516,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "e9365cb82e027ad2c5854866af80138f55d043a0d19bec1011e0fa9b360f8bd8",
+      "model.txt": "c137452fe09d12339fa00db71be5f568e8bc850d2f120b7d7038cd0c32eaf19d",
+      "val_probability.npy": "8480c9b74bda710748ce6709e3b6ef0145ea27e38d898443cb45bed712dbed14",
+      "fit_history.json": "f5f5c1a9767ffb5231f1fb413ae4b151aa35eb45bace7dcd83761528ab637ba9"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__pampa_only/model.txt"
+  },
+  "influx_pampa__zero_control": {
+    "run_signature": "c93dee1dd5123242f62eea44a6bc73580777752b57f263442ead7c34d98e03e1",
+    "spec": {
+      "experiment_id": "influx_pampa__zero_control",
+      "weight_group": "influx_pampa",
+      "source_selected_mode": "influx_pampa",
+      "core_weight": 1.25,
+      "reserve_weight": 1.3,
+      "indices": [
+        5,
+        6
+      ],
+      "experiment": "zero_control",
+      "mechanism_mask": [
+        0,
+        0,
+        0
+      ],
+      "input_dim": 2051,
+      "is_source_selected_arm": false
+    },
+    "thresholds": {
+      "fixed_0p5": 0.5,
+      "validation_selected": 0.5
+    },
+    "validation_metrics": {
+      "fixed_0p5": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9220443214167755,
+        "AUPRC_AP": 0.9432931813506824,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8304446296849688,
+        "SN": 0.8110599078341014,
+        "SP": 0.8498293515358362,
+        "F1": 0.8481927710843373,
+        "MCC": 0.6509472235239622,
+        "TN": 249,
+        "FP": 44,
+        "FN": 82,
+        "TP": 352
+      },
+      "validation_selected": {
+        "n": 727,
+        "n_positive": 434,
+        "n_negative": 293,
+        "threshold": 0.5,
+        "AUROC": 0.9220443214167755,
+        "AUPRC_AP": 0.9432931813506824,
+        "ACC": 0.8266850068775791,
+        "BACC": 0.8304446296849688,
+        "SN": 0.8110599078341014,
+        "SP": 0.8498293515358362,
+        "F1": 0.8481927710843373,
+        "MCC": 0.6509472235239622,
+        "TN": 249,
+        "FP": 44,
+        "FN": 82,
+        "TP": 352
+      }
+    },
+    "fit_mode": "new_train_only_fit; validation_class_weighted_BCE_early_stopping",
+    "reused_model_sha256": null,
+    "best_iteration": 185,
+    "seconds": 7.168141270056367,
+    "sample_weight_summary": {
+      "n_upweighted": 2827,
+      "min": 1.0,
+      "max": 1.3,
+      "positive_sum": 4874.6,
+      "negative_sum": 3503.35
+    },
+    "files_sha256": {
+      "PLAN.json": "7e7ad742d2f67e2745b11879261174802174b9f07ca86d82358dcc1b36d7401d",
+      "model.txt": "8c3803633344f469630a152d29d800839300e1663322e69554a2401ba0ca78fa",
+      "val_probability.npy": "95b26701da76540c98c42f4ea28a186ca2189a9c3ceb2488728d681fa8a0d06b",
+      "fit_history.json": "297ad91817e5e4adfa97d227c02100821b4ce16cab9b3f531c4f34888eda9119"
+    },
+    "source_relative_model_path": "titan_grouped_multiobjective_seed42_results/attempt_bayes001/four_weight_ablation/attempt_001/models/influx_pampa__zero_control/model.txt"
+  }
+}
